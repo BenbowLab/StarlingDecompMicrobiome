@@ -1,0 +1,81 @@
+Phylum,Hours,Sample.Type,N,mean,sd,se
+Actinobacteria,0,Ceca,5,0.8,1.574801575,0.704272674
+Firmicutes,0,Ceca,5,16.64,11.10531404,4.966447422
+Proteobacteria,0,Ceca,5,48,32.95694161,14.73879235
+Tenericutes,0,Ceca,5,30.96,33.13197851,14.81707124
+Other,0,Ceca,5,3.6,0,0
+Actinobacteria,24,Ceca,2,2,2.828427125,2
+Firmicutes,24,Ceca,2,26.8,35.63818177,25.2
+Proteobacteria,24,Ceca,2,70.8,39.03229432,27.6
+Tenericutes,24,Ceca,2,0,0,0
+Other,24,Ceca,2,0.4,0,0
+Actinobacteria,48,Ceca,4,0,0,0
+Firmicutes,48,Ceca,4,45.3,25.98743286,12.99371643
+Proteobacteria,48,Ceca,4,53.5,27.40778478,13.70389239
+Tenericutes,48,Ceca,4,0,0,0
+Other,48,Ceca,4,1.2,0,0
+Actinobacteria,72,Ceca,3,0,0,0
+Firmicutes,72,Ceca,3,75.06666667,40.41451884,23.33333333
+Proteobacteria,72,Ceca,3,24.8,40.53048236,23.4002849
+Tenericutes,72,Ceca,3,0,0,0
+Other,72,Ceca,3,0.133333333,0,0
+Actinobacteria,0,Cloaca,2,2.6,0.282842712,0.2
+Firmicutes,0,Cloaca,2,47.2,27.1529004,19.2
+Proteobacteria,0,Cloaca,2,42.8,19.23330445,13.6
+Tenericutes,0,Cloaca,2,3.4,4.808326112,3.4
+Other,0,Cloaca,2,4,0,0
+Actinobacteria,48,Cloaca,2,0.2,0.282842712,0.2
+Firmicutes,48,Cloaca,2,26,17.53624817,12.4
+Proteobacteria,48,Cloaca,2,73.8,17.25340546,12.2
+Tenericutes,48,Cloaca,2,0,0,0
+Other,48,Cloaca,2,0,0,0
+Actinobacteria,72,Cloaca,3,0,0,0
+Firmicutes,72,Cloaca,3,31.73333333,8.893443278,5.13463187
+Proteobacteria,72,Cloaca,3,68.26666667,8.893443278,5.13463187
+Tenericutes,72,Cloaca,3,0,0,0
+Other,72,Cloaca,3,0,0,0
+Actinobacteria,24,Cloaca,4,0.4,0.8,0.4
+Firmicutes,24,Cloaca,4,26.2,17.57725803,8.788629017
+Proteobacteria,24,Cloaca,4,73.4,17.45546715,8.727733574
+Tenericutes,24,Cloaca,4,0,0,0
+Other,24,Cloaca,4,0,0,0
+Actinobacteria,0,Large Intestine,3,12.13333333,10.26320288,5.925462945
+Firmicutes,0,Large Intestine,3,20.66666667,32.00083332,18.47568973
+Proteobacteria,0,Large Intestine,3,21.6,7.787168934,4.49592408
+Tenericutes,0,Large Intestine,3,40,39.22448215,22.64626533
+Other,0,Large Intestine,3,5.6,0,0
+Actinobacteria,24,Large Intestine,4,0.5,0.757187779,0.37859389
+Firmicutes,24,Large Intestine,4,34,21.86747966,10.93373983
+Proteobacteria,24,Large Intestine,4,64.9,21.99969697,10.99984848
+Tenericutes,24,Large Intestine,4,0,0,0
+Other,24,Large Intestine,4,0.6,0,0
+Actinobacteria,48,Large Intestine,4,0.2,0.4,0.2
+Firmicutes,48,Large Intestine,4,54.6,22.04601249,11.02300624
+Proteobacteria,48,Large Intestine,4,45.2,21.71082679,10.8554134
+Tenericutes,48,Large Intestine,4,0,0,0
+Other,48,Large Intestine,4,0,0,0
+Actinobacteria,72,Large Intestine,4,0,0,0
+Firmicutes,72,Large Intestine,4,56.3,20.82658557,10.41329279
+Proteobacteria,72,Large Intestine,4,43.7,20.82658557,10.41329279
+Tenericutes,72,Large Intestine,4,0,0,0
+Other,72,Large Intestine,4,0,0,0
+Actinobacteria,0,Small Intestine,3,8.666666667,7.529497549,4.347157437
+Firmicutes,0,Small Intestine,3,15.33333333,14.49045663,8.366069036
+Proteobacteria,0,Small Intestine,3,52.8,27.49545417,15.87450787
+Tenericutes,0,Small Intestine,3,0,0,0
+Other,0,Small Intestine,3,23.2,0,0
+Actinobacteria,24,Small Intestine,3,0,0,0
+Firmicutes,24,Small Intestine,3,26.53333333,13.81207201,7.974403496
+Proteobacteria,24,Small Intestine,3,73.33333333,13.86987142,8.007774001
+Tenericutes,24,Small Intestine,3,0,0,0
+Other,24,Small Intestine,,0.133333333,0,0
+Actinobacteria,48,Small Intestine,4,0,0,0
+Firmicutes,48,Small Intestine,4,49.6,19.02419512,9.51209756
+Proteobacteria,48,Small Intestine,4,49.9,19.58877229,9.794386147
+Tenericutes,48,Small Intestine,4,0,0,0
+Other,48,Small Intestine,,0.5,0,0
+Actinobacteria,72,Small Intestine,3,0,0,0
+Firmicutes,72,Small Intestine,3,53.46666667,21.80030581,12.58641243
+Proteobacteria,72,Small Intestine,3,46.4,21.65917819,12.50493236
+Tenericutes,72,Small Intestine,3,0,0,0
+Other,72,Small Intestine,3,0.133333333,0,0

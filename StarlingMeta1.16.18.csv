@@ -1,0 +1,66 @@
+SampleID,LinkerSequence,Nest,Chick,Sample Type,Hours,Anti_Post,Type_Hours,Dry_Weight,Description
+ST180,N,3,1,Ceca,0,Antemortem,Ceca0_hrs,0.028,ST180
+ST181,N,5,1,Ceca,0,Antemortem,Ceca0_hrs,0.023,ST181
+ST182,N,6,1,Ceca,0,Antemortem,Ceca0_hrs,0.027,ST182
+ST183,N,7,1,Ceca,0,Antemortem,Ceca0_hrs,0.024,ST183
+ST185,N,11,1,Ceca,0,Antemortem,Ceca0_hrs,0.018,ST185
+ST186,N,22,1,Ceca,24,Postmortem,Ceca24_hrs,0.021,ST186
+ST187,N,21,1,Ceca,24,Postmortem,Ceca24_hrs,0.022,ST187
+ST188,N,20,1,Ceca,24,Postmortem,Ceca24_hrs,0.017,ST188
+ST189,N,28,1,Ceca,24,Postmortem,Ceca24_hrs,0.012,ST189
+ST190,N,22,2,Ceca,48,Postmortem,Ceca48_hrs,0.012,ST190
+ST191,N,21,2,Ceca,48,Postmortem,Ceca48_hrs,0.021,ST191
+ST192,N,20,2,Ceca,48,Postmortem,Ceca48_hrs,0.022,ST192
+ST193,N,27,1,Ceca,48,Postmortem,Ceca48_hrs,0.015,ST193
+ST195,N,21,3,Ceca,72,Postmortem,Ceca72_hrs,0.014,ST195
+ST196,N,15,1,Ceca,72,Postmortem,Ceca72_hrs,0.011,ST196
+ST197,N,26,1,Ceca,72,Postmortem,Ceca72_hrs,0.011,ST197
+ST81,N,28,1,Cloaca,0,Antemortem,Cloacal_Swab0_hrs,NA,ST81
+ST88,N,20,2,Cloaca,0,Antemortem,Cloacal_Swab0_hrs,NA,ST88
+ST90,N,22,2,Cloaca,48,Postmortem,Cloacal_Swab48_hrs,NA,ST90
+ST91,N,21,2,Cloaca,48,Postmortem,Cloacal_Swab48_hrs,NA,ST91
+ST99,N,21,3,Cloaca,72,Postmortem,Cloacal_Swab72_hrs,NA,ST99
+ST100,N,15,1,Cloaca,72,Postmortem,Cloacal_Swab72_hrs,NA,ST100
+ST101,N,26,1,Cloaca,72,Postmortem,Cloacal_Swab72_hrs,NA,ST101
+ST82,N,22,1,Cloaca,24,Postmortem,Cloacal_Swab24_hrs,NA,ST82
+ST83,N,21,1,Cloaca,24,Postmortem,Cloacal_Swab24_hrs,NA,ST83
+ST84,N,20,1,Cloaca,24,Postmortem,Cloacal_Swab24_hrs,NA,ST84
+ST85,N,28,1,Cloaca,24,Postmortem,Cloacal_Swab24_hrs,NA,ST85
+ST117,N,21,3,Headgut Swab,72,Postmortem,Headgut_Swab72_hrs,NA,ST117
+ST118,N,15,1,Headgut Swab,72,Postmortem,Headgut_Swab72_hrs,NA,ST118
+ST119,N,26,1,Headgut Swab,72,Postmortem,Headgut_Swab72_hrs,NA,ST119
+ST162,N,3,1,Large Intestine,0,Antemortem,Large_Intestine_Tissue0_hrs,0.144,ST162
+ST163,N,5,1,Large Intestine,0,Antemortem,Large_Intestine_Tissue0_hrs,0.257,ST163
+ST164,N,6,1,Large Intestine,0,Antemortem,Large_Intestine_Tissue0_hrs,0.207,ST164
+ST165,N,7,1,Large Intestine,0,Antemortem,Large_Intestine_Tissue0_hrs,0.235,ST165
+ST167,N,11,1,Large Intestine,0,Antemortem,Large_Intestine_Tissue0_hrs,0.248,ST167
+ST168,N,22,1,Large Intestine,24,Postmortem,Large_Intestine_Tissue24_hrs,0.168,ST168
+ST169,N,21,1,Large Intestine,24,Postmortem,Large_Intestine_Tissue24_hrs,0.174,ST169
+ST170,N,20,1,Large Intestine,24,Postmortem,Large_Intestine_Tissue24_hrs,0.08,ST170
+ST171,N,28,1,Large Intestine,24,Postmortem,Large_Intestine_Tissue24_hrs,0.125,ST171
+ST172,N,22,2,Large Intestine,48,Postmortem,Large_Intestine_Tissue48_hrs,0.147,ST172
+ST174,N,20,2,Large Intestine,48,Postmortem,Large_Intestine_Tissue48_hrs,0.09,ST174
+ST173,N,21,2,Large Intestine,48,Postmortem,Large_Intestine_Tissue48_hrs,0.224,ST173
+ST175,N,27,1,Large Intestine,48,Postmortem,Large_Intestine_Tissue48_hrs,0.279,ST175
+ST176,N,22,3,Large Intestine,72,Postmortem,Large_Intestine_Tissue72_hrs,0.148,ST176
+ST177,N,21,3,Large Intestine,72,Postmortem,Large_Intestine_Tissue72_hrs,0.103,ST177
+ST179,N,26,1,Large Intestine,72,Postmortem,Large_Intestine_Tissue72_hrs,0.184,ST179
+ST178,N,15,1,Large Intestine,72,Postmortem,Large_Intestine_Tissue72_hrs,0.192,ST178
+ST128,N,6,1,Small Intestine,0,Antemortem,Small_Intestine_Tissue0_hrs,1.49,ST128
+ST129,N,7,1,Small Intestine,0,Antemortem,Small_Intestine_Tissue0_hrs,1.294,ST129
+ST126,N,3,1,Small Intestine,0,Antemortem,Small_Intestine_Tissue0_hrs,1.365,ST126
+ST127,N,5,1,Small Intestine,0,Antemortem,Small_Intestine_Tissue0_hrs,1.208,ST127
+ST132,N,22,1,Small Intestine,24,Postmortem,Small_Intestine_Tissue24_hrs,1.463,ST132
+ST134,N,20,1,Small Intestine,24,Postmortem,Small_Intestine_Tissue24_hrs,1.101,ST134
+ST133,N,21,1,Small Intestine,24,Postmortem,Small_Intestine_Tissue24_hrs,1.618,ST133
+ST135,N,28,1,Small Intestine,24,Postmortem,Small_Intestine_Tissue24_hrs,1.244,ST135
+ST136,N,22,2,Small Intestine,48,Postmortem,Small_Intestine_Tissue48_hrs,1.18,ST136
+ST137,N,21,2,Small Intestine,48,Postmortem,Small_Intestine_Tissue48_hrs,1.341,ST137
+ST138,N,20,2,Small Intestine,48,Postmortem,Small_Intestine_Tissue48_hrs,1.148,ST138
+ST139,N,27,1,Small Intestine,48,Postmortem,Small_Intestine_Tissue48_hrs,1.416,ST139
+ST140,N,22,3,Small Intestine,72,Postmortem,Small_Intestine_Tissue72_hrs,1.096,ST140
+ST141,N,21,3,Small Intestine,72,Postmortem,Small_Intestine_Tissue72_hrs,1.065,ST141
+ST142,N,15,1,Small Intestine,72,Postmortem,Small_Intestine_Tissue72_hrs,1.417,ST142
+ST147,N,7,1,Small_Intestine_Contents,0,Antemortem,Small_Intestine_Contents0_hrs,0.359,ST147
+ST149,N,11,1,Small_Intestine_Contents,0,Antemortem,Small_Intestine_Contents0_hrs,0.612,ST149
+ST154,N,22,2,Small_Intestine_Contents,48,Postmortem,Small_Intestine_Contents48_hrs,0.541,ST154

@@ -1,0 +1,297 @@
+,KEGG.Pathway,Sample.Type,Anti_Post,N,mean,sd,se
+1,Amino Acid Metabolism,Small Intestine,Antemortem,4,10.01424878,0.746214188,0.373107094
+2,Amino Acid Metabolism,Small Intestine,Postmortem,11,8.570096799,0.215529053,0.064984455
+3,Amino Acid Metabolism,Ceca,Antemortem,5,8.637868947,0.368895895,0.16497526
+4,Amino Acid Metabolism,Ceca,Postmortem,9,8.317877804,0.682609649,0.22753655
+5,Amino Acid Metabolism,Large Intestine,Antemortem,5,10.71732763,0.448864534,0.200738322
+6,Amino Acid Metabolism,Large Intestine,Postmortem,12,8.494994705,0.185705209,0.053608476
+7,Amino Acid Metabolism,Cloaca,Antemortem,2,8.920382167,0.494986448,0.350008274
+8,Amino Acid Metabolism,Cloaca,Postmortem,9,8.387029334,0.21268202,0.070894007
+9,Biosynthesis of Other Secondary Metabolites,Small Intestine,Antemortem,4,0.782678997,0.056946189,0.028473095
+10,Biosynthesis of Other Secondary Metabolites,Small Intestine,Postmortem,11,0.732664371,0.047120119,0.01420725
+11,Biosynthesis of Other Secondary Metabolites,Ceca,Antemortem,5,0.730414362,0.075447848,0.033741304
+12,Biosynthesis of Other Secondary Metabolites,Ceca,Postmortem,9,0.728687276,0.147047422,0.049015807
+13,Biosynthesis of Other Secondary Metabolites,Large Intestine,Antemortem,5,0.892623824,0.105848427,0.047336856
+14,Biosynthesis of Other Secondary Metabolites,Large Intestine,Postmortem,12,0.734803743,0.046154734,0.013323724
+15,Biosynthesis of Other Secondary Metabolites,Cloaca,Antemortem,2,0.742191154,0.050652346,0.035816617
+16,Biosynthesis of Other Secondary Metabolites,Cloaca,Postmortem,9,0.705662226,0.040221411,0.013407137
+17,Cancers,Small Intestine,Antemortem,4,0.127174812,0.038237918,0.019118959
+18,Cancers,Small Intestine,Postmortem,11,0.085567502,0.014483227,0.004366857
+19,Cancers,Ceca,Antemortem,5,0.094195097,0.016986067,0.0075964
+20,Cancers,Ceca,Postmortem,9,0.089717317,0.021754021,0.00725134
+21,Cancers,Large Intestine,Antemortem,5,0.126351035,0.016173651,0.007233077
+22,Cancers,Large Intestine,Postmortem,12,0.080438496,0.012325139,0.003557961
+23,Cancers,Cloaca,Antemortem,2,0.102162446,0.018744754,0.013254543
+24,Cancers,Cloaca,Postmortem,9,0.088881896,0.006789963,0.002263321
+25,Carbohydrate Metabolism,Small Intestine,Antemortem,4,9.667968175,0.787588054,0.393794027
+26,Carbohydrate Metabolism,Small Intestine,Postmortem,11,11.42674504,0.4606751,0.138898769
+27,Carbohydrate Metabolism,Ceca,Antemortem,5,10.90548893,0.795417111,0.355721346
+28,Carbohydrate Metabolism,Ceca,Postmortem,9,11.03947955,0.874374391,0.29145813
+29,Carbohydrate Metabolism,Large Intestine,Antemortem,5,10.73424145,0.913824452,0.408674719
+30,Carbohydrate Metabolism,Large Intestine,Postmortem,12,11.50678049,0.536715877,0.154936528
+31,Carbohydrate Metabolism,Cloaca,Antemortem,2,11.30547018,0.648324607,0.458434726
+32,Carbohydrate Metabolism,Cloaca,Postmortem,9,11.4387196,0.636159374,0.212053125
+33,Cell Growth and Death,Small Intestine,Antemortem,4,0.465995209,0.125845894,0.062922947
+34,Cell Growth and Death,Small Intestine,Postmortem,11,0.282835773,0.059152046,0.017835013
+35,Cell Growth and Death,Ceca,Antemortem,5,0.304590858,0.085326762,0.038159288
+36,Cell Growth and Death,Ceca,Postmortem,9,0.354900641,0.105898746,0.035299582
+37,Cell Growth and Death,Large Intestine,Antemortem,5,0.413119658,0.040811458,0.018251439
+38,Cell Growth and Death,Large Intestine,Postmortem,12,0.271422704,0.040375443,0.011655386
+39,Cell Growth and Death,Cloaca,Antemortem,2,0.321366293,0.104891838,0.07416973
+40,Cell Growth and Death,Cloaca,Postmortem,9,0.234845168,0.024945008,0.008315003
+41,Cell Motility,Small Intestine,Antemortem,4,3.55027106,1.63217924,0.81608962
+42,Cell Motility,Small Intestine,Postmortem,11,2.026413474,0.869075056,0.262035989
+43,Cell Motility,Ceca,Antemortem,5,2.362268963,1.062831316,0.475312614
+44,Cell Motility,Ceca,Postmortem,9,3.116880914,1.097646213,0.365882071
+45,Cell Motility,Large Intestine,Antemortem,5,2.234754862,0.810078354,0.362278053
+46,Cell Motility,Large Intestine,Postmortem,12,1.975989847,0.860323523,0.248354009
+47,Cell Motility,Cloaca,Antemortem,2,1.463464402,0.650633434,0.460067313
+48,Cell Motility,Cloaca,Postmortem,9,1.761047566,0.796443071,0.265481024
+49,Cellular Processes and Signaling,Small Intestine,Antemortem,4,4.222321055,0.53500181,0.267500905
+50,Cellular Processes and Signaling,Small Intestine,Postmortem,11,4.919256804,0.300815842,0.090699389
+51,Cellular Processes and Signaling,Ceca,Antemortem,5,4.890890448,0.580664654,0.259681128
+52,Cellular Processes and Signaling,Ceca,Postmortem,9,4.805974486,0.689132327,0.229710776
+53,Cellular Processes and Signaling,Large Intestine,Antemortem,5,3.757185387,0.606688088,0.271319161
+54,Cellular Processes and Signaling,Large Intestine,Postmortem,12,4.912856193,0.282900793,0.081666425
+55,Cellular Processes and Signaling,Cloaca,Antemortem,2,4.684254184,0.568223072,0.401794387
+56,Cellular Processes and Signaling,Cloaca,Postmortem,9,5.234606329,0.150948504,0.050316168
+57,Digestive System,Small Intestine,Antemortem,4,0.051328197,0.032382065,0.016191032
+58,Digestive System,Small Intestine,Postmortem,11,0.029097875,0.01003764,0.003026462
+59,Digestive System,Ceca,Antemortem,5,0.033652421,0.006097271,0.002726782
+60,Digestive System,Ceca,Postmortem,9,0.020077942,0.014398067,0.004799356
+61,Digestive System,Large Intestine,Antemortem,5,0.036262882,0.012199936,0.005455977
+62,Digestive System,Large Intestine,Postmortem,12,0.030650956,0.005393857,0.001557072
+63,Digestive System,Cloaca,Antemortem,2,0.033593386,0.003836402,0.002712746
+64,Digestive System,Cloaca,Postmortem,9,0.033883062,0.004479505,0.001493168
+65,Endocrine System,Small Intestine,Antemortem,4,0.370144096,0.083322464,0.041661232
+66,Endocrine System,Small Intestine,Postmortem,11,0.166601832,0.035120243,0.010589152
+67,Endocrine System,Ceca,Antemortem,5,0.198240485,0.054162866,0.02422237
+68,Endocrine System,Ceca,Postmortem,9,0.158678359,0.029876606,0.009958869
+69,Endocrine System,Large Intestine,Antemortem,5,0.441786259,0.061513426,0.02750964
+70,Endocrine System,Large Intestine,Postmortem,12,0.157239339,0.018254618,0.005269654
+71,Endocrine System,Cloaca,Antemortem,2,0.206518189,0.077093049,0.054513018
+72,Endocrine System,Cloaca,Postmortem,9,0.15005713,0.009809904,0.003269968
+73,Energy Metabolism,Small Intestine,Antemortem,4,5.427622118,0.656995531,0.328497765
+74,Energy Metabolism,Small Intestine,Postmortem,11,4.68978373,0.13714264,0.041350062
+75,Energy Metabolism,Ceca,Antemortem,5,4.845490947,0.196730168,0.087980406
+76,Energy Metabolism,Ceca,Postmortem,9,4.847433864,0.161392486,0.053797495
+77,Energy Metabolism,Large Intestine,Antemortem,5,5.281655235,0.363184543,0.162421065
+78,Energy Metabolism,Large Intestine,Postmortem,12,4.676779249,0.080747931,0.02330992
+79,Energy Metabolism,Cloaca,Antemortem,2,4.828430236,0.121366633,0.085819169
+80,Energy Metabolism,Cloaca,Postmortem,9,4.645164095,0.037568315,0.012522772
+81,Environmental Adaptation,Small Intestine,Antemortem,4,0.131003999,0.022898958,0.011449479
+82,Environmental Adaptation,Small Intestine,Postmortem,11,0.109987919,0.018725953,0.005646087
+83,Environmental Adaptation,Ceca,Antemortem,5,0.119183302,0.030701604,0.013730175
+84,Environmental Adaptation,Ceca,Postmortem,9,0.137866672,0.025126566,0.008375522
+85,Environmental Adaptation,Large Intestine,Antemortem,5,0.125901483,0.023799613,0.01064351
+86,Environmental Adaptation,Large Intestine,Postmortem,12,0.109631214,0.017241622,0.004977228
+87,Environmental Adaptation,Cloaca,Antemortem,2,0.109072532,0.016681853,0.011795851
+88,Environmental Adaptation,Cloaca,Postmortem,9,0.099859333,0.008526029,0.00284201
+89,Enzyme Families,Small Intestine,Antemortem,4,2.016917636,0.121592966,0.060796483
+90,Enzyme Families,Small Intestine,Postmortem,11,2.078151712,0.128406632,0.038716056
+91,Enzyme Families,Ceca,Antemortem,5,1.976340778,0.053429984,0.023894615
+92,Enzyme Families,Ceca,Postmortem,9,2.289982675,0.212474642,0.070824881
+93,Enzyme Families,Large Intestine,Antemortem,5,1.789351031,0.11779486,0.052679463
+94,Enzyme Families,Large Intestine,Postmortem,12,2.058766692,0.100504711,0.029013211
+95,Enzyme Families,Cloaca,Antemortem,2,1.988814986,0.039882228,0.028200994
+96,Enzyme Families,Cloaca,Postmortem,9,2.029693445,0.055228487,0.018409496
+97,Excretory System,Small Intestine,Antemortem,4,0.038722614,0.014950269,0.007475135
+98,Excretory System,Small Intestine,Postmortem,11,0.035904622,0.010064898,0.003034681
+99,Excretory System,Ceca,Antemortem,5,0.033335423,0.015564929,0.006960848
+100,Excretory System,Ceca,Postmortem,9,0.032661723,0.008583078,0.002861026
+101,Excretory System,Large Intestine,Antemortem,5,0.042253738,0.017106004,0.007650038
+102,Excretory System,Large Intestine,Postmortem,12,0.03754352,0.007423998,0.002143124
+103,Excretory System,Cloaca,Antemortem,2,0.042195748,0.00485364,0.003432042
+104,Excretory System,Cloaca,Postmortem,9,0.043408381,0.006854404,0.002284801
+105,"Folding, Sorting and Degradation",Small Intestine,Antemortem,4,2.227756517,0.205359065,0.102679532
+106,"Folding, Sorting and Degradation",Small Intestine,Postmortem,11,2.029734707,0.083633918,0.025216575
+107,"Folding, Sorting and Degradation",Ceca,Antemortem,5,2.128854193,0.181382611,0.081116769
+108,"Folding, Sorting and Degradation",Ceca,Postmortem,9,2.105778157,0.148025731,0.04934191
+109,"Folding, Sorting and Degradation",Large Intestine,Antemortem,5,2.096758176,0.162790294,0.072802033
+110,"Folding, Sorting and Degradation",Large Intestine,Postmortem,12,2.002897659,0.078987207,0.022801643
+111,"Folding, Sorting and Degradation",Cloaca,Antemortem,2,2.051325886,0.019874424,0.01405334
+112,"Folding, Sorting and Degradation",Cloaca,Postmortem,9,2.013174519,0.088866392,0.029622131
+113,Genetic Information Processing,Small Intestine,Antemortem,4,2.250563917,0.212922455,0.106461227
+114,Genetic Information Processing,Small Intestine,Postmortem,11,2.529603043,0.173484616,0.05230758
+115,Genetic Information Processing,Ceca,Antemortem,5,2.516577697,0.226847289,0.101449192
+116,Genetic Information Processing,Ceca,Postmortem,9,2.613850885,0.460480536,0.153493512
+117,Genetic Information Processing,Large Intestine,Antemortem,5,2.075891441,0.2137143,0.09557594
+118,Genetic Information Processing,Large Intestine,Postmortem,12,2.551141961,0.232702103,0.067175311
+119,Genetic Information Processing,Cloaca,Antemortem,2,2.402615854,0.064053967,0.045292994
+120,Genetic Information Processing,Cloaca,Postmortem,9,2.561129435,0.287626401,0.095875467
+121,Glycan Biosynthesis and Metabolism,Small Intestine,Antemortem,4,1.767401967,0.083135258,0.041567629
+122,Glycan Biosynthesis and Metabolism,Small Intestine,Postmortem,11,2.000944587,0.266678591,0.080406621
+123,Glycan Biosynthesis and Metabolism,Ceca,Antemortem,5,2.093478163,0.295533023,0.132166386
+124,Glycan Biosynthesis and Metabolism,Ceca,Postmortem,9,1.843740402,0.563918877,0.187972959
+125,Glycan Biosynthesis and Metabolism,Large Intestine,Antemortem,5,1.744833888,0.243682242,0.108978012
+126,Glycan Biosynthesis and Metabolism,Large Intestine,Postmortem,12,1.992659159,0.24525265,0.070798342
+127,Glycan Biosynthesis and Metabolism,Cloaca,Antemortem,2,1.981313979,0.065915489,0.046609289
+128,Glycan Biosynthesis and Metabolism,Cloaca,Postmortem,9,2.113609853,0.236007694,0.078669231
+129,Immune System,Small Intestine,Antemortem,4,0.03810407,0.007256499,0.00362825
+130,Immune System,Small Intestine,Postmortem,11,0.045540028,0.008460583,0.002550962
+131,Immune System,Ceca,Antemortem,5,0.039951645,0.005624448,0.00251533
+132,Immune System,Ceca,Postmortem,9,0.049819957,0.015707059,0.005235686
+133,Immune System,Large Intestine,Antemortem,5,0.046221785,0.006208641,0.002776589
+134,Immune System,Large Intestine,Postmortem,12,0.041510393,0.003404938,0.000982921
+135,Immune System,Cloaca,Antemortem,2,0.038454201,0.005225199,0.003694774
+136,Immune System,Cloaca,Postmortem,9,0.039961015,0.003646947,0.001215649
+137,Immune System Diseases,Small Intestine,Antemortem,4,0.055349782,0.006085577,0.003042789
+138,Immune System Diseases,Small Intestine,Postmortem,11,0.047794594,0.008534246,0.002573172
+139,Immune System Diseases,Ceca,Antemortem,5,0.046658764,0.006860705,0.0030682
+140,Immune System Diseases,Ceca,Postmortem,9,0.060714323,0.020793529,0.006931176
+141,Immune System Diseases,Large Intestine,Antemortem,5,0.054052981,0.010763752,0.004813696
+142,Immune System Diseases,Large Intestine,Postmortem,12,0.047799241,0.006657736,0.001921923
+143,Immune System Diseases,Cloaca,Antemortem,2,0.047405832,0.009760196,0.006901501
+144,Immune System Diseases,Cloaca,Postmortem,9,0.04236192,0.004686228,0.001562076
+145,Infectious Diseases,Small Intestine,Antemortem,4,0.509621233,0.10226113,0.051130565
+146,Infectious Diseases,Small Intestine,Postmortem,11,0.553706331,0.058629878,0.017677573
+147,Infectious Diseases,Ceca,Antemortem,5,0.539367913,0.095886093,0.042881564
+148,Infectious Diseases,Ceca,Postmortem,9,0.527073492,0.097423647,0.032474549
+149,Infectious Diseases,Large Intestine,Antemortem,5,0.417807051,0.070272436,0.031426789
+150,Infectious Diseases,Large Intestine,Postmortem,12,0.559191015,0.052008069,0.015013436
+151,Infectious Diseases,Cloaca,Antemortem,2,0.507836061,0.072956045,0.051587714
+152,Infectious Diseases,Cloaca,Postmortem,9,0.587125575,0.051682592,0.017227531
+153,Lipid Metabolism,Small Intestine,Antemortem,4,3.485813951,0.465189739,0.232594869
+154,Lipid Metabolism,Small Intestine,Postmortem,11,2.745186827,0.129822911,0.039143081
+155,Lipid Metabolism,Ceca,Antemortem,5,2.929278514,0.162002674,0.072449798
+156,Lipid Metabolism,Ceca,Postmortem,9,2.587265951,0.164623685,0.054874562
+157,Lipid Metabolism,Large Intestine,Antemortem,5,4.131268953,0.542798807,0.242747006
+158,Lipid Metabolism,Large Intestine,Postmortem,12,2.746887678,0.121709766,0.035134583
+159,Lipid Metabolism,Cloaca,Antemortem,2,3.114826311,0.313122799,0.221411254
+160,Lipid Metabolism,Cloaca,Postmortem,9,2.764642417,0.043954654,0.014651551
+161,Membrane Transport,Small Intestine,Antemortem,4,13.3270208,1.387465469,0.693732735
+162,Membrane Transport,Small Intestine,Postmortem,11,18.02960789,1.481381793,0.446653416
+163,Membrane Transport,Ceca,Antemortem,5,17.19020939,2.238920322,1.001275607
+164,Membrane Transport,Ceca,Postmortem,9,16.21048824,1.318056114,0.439352038
+165,Membrane Transport,Large Intestine,Antemortem,5,13.11881037,1.43470235,0.641618396
+166,Membrane Transport,Large Intestine,Postmortem,12,18.23572751,1.374064055,0.396658126
+167,Membrane Transport,Cloaca,Antemortem,2,17.69663549,1.651856639,1.168039031
+168,Membrane Transport,Cloaca,Postmortem,9,18.77019483,1.528949358,0.509649786
+169,Metabolic Diseases,Small Intestine,Antemortem,4,0.088065046,0.019065332,0.009532666
+170,Metabolic Diseases,Small Intestine,Postmortem,11,0.069073407,0.010878688,0.003280048
+171,Metabolic Diseases,Ceca,Antemortem,5,0.073245344,0.016213949,0.007251098
+172,Metabolic Diseases,Ceca,Postmortem,9,0.078784024,0.018841671,0.006280557
+173,Metabolic Diseases,Large Intestine,Antemortem,5,0.076938414,0.018384175,0.008221653
+174,Metabolic Diseases,Large Intestine,Postmortem,12,0.069032056,0.010915815,0.003151124
+175,Metabolic Diseases,Cloaca,Antemortem,2,0.064876633,0.005641217,0.003988943
+176,Metabolic Diseases,Cloaca,Postmortem,9,0.064369106,0.011532248,0.003844083
+177,Metabolism,Small Intestine,Antemortem,4,2.691000013,0.285617514,0.142808757
+178,Metabolism,Small Intestine,Postmortem,11,3.281637086,0.18255259,0.055041677
+179,Metabolism,Ceca,Antemortem,5,3.108822959,0.264880544,0.11845818
+180,Metabolism,Ceca,Postmortem,9,3.23483317,0.472769902,0.157589967
+181,Metabolism,Large Intestine,Antemortem,5,2.620424222,0.266515391,0.119189306
+182,Metabolism,Large Intestine,Postmortem,12,3.371408052,0.12267469,0.035413133
+183,Metabolism,Cloaca,Antemortem,2,3.130171992,0.278830301,0.197162797
+184,Metabolism,Cloaca,Postmortem,9,3.456642621,0.150265655,0.050088552
+185,Metabolism of Cofactors and Vitamins,Small Intestine,Antemortem,4,4.197989309,0.399551397,0.199775698
+186,Metabolism of Cofactors and Vitamins,Small Intestine,Postmortem,11,3.731645898,0.100945606,0.030436245
+187,Metabolism of Cofactors and Vitamins,Ceca,Antemortem,5,3.727840953,0.228476762,0.102177914
+188,Metabolism of Cofactors and Vitamins,Ceca,Postmortem,9,3.753215064,0.237483091,0.07916103
+189,Metabolism of Cofactors and Vitamins,Large Intestine,Antemortem,5,3.898630953,0.382748658,0.171170403
+190,Metabolism of Cofactors and Vitamins,Large Intestine,Postmortem,12,3.682712111,0.060947134,0.017593922
+191,Metabolism of Cofactors and Vitamins,Cloaca,Antemortem,2,3.776725334,0.020169266,0.014261825
+192,Metabolism of Cofactors and Vitamins,Cloaca,Postmortem,9,3.716845779,0.027779462,0.009259821
+193,Metabolism of Other Amino Acids,Small Intestine,Antemortem,4,1.862847723,0.178387967,0.089193983
+194,Metabolism of Other Amino Acids,Small Intestine,Postmortem,11,1.702004567,0.074792034,0.022550647
+195,Metabolism of Other Amino Acids,Ceca,Antemortem,5,1.748580062,0.073188924,0.032731082
+196,Metabolism of Other Amino Acids,Ceca,Postmortem,9,1.604762538,0.058361702,0.019453901
+197,Metabolism of Other Amino Acids,Large Intestine,Antemortem,5,2.088574614,0.15296355,0.068407379
+198,Metabolism of Other Amino Acids,Large Intestine,Postmortem,12,1.721607472,0.068244945,0.019700619
+199,Metabolism of Other Amino Acids,Cloaca,Antemortem,2,1.803218303,0.07979337,0.056422433
+200,Metabolism of Other Amino Acids,Cloaca,Postmortem,9,1.733545649,0.038076829,0.012692276
+201,Metabolism of Terpenoids and Polyketides,Small Intestine,Antemortem,4,1.948141777,0.171638865,0.085819433
+202,Metabolism of Terpenoids and Polyketides,Small Intestine,Postmortem,11,1.485352296,0.081119747,0.024458524
+203,Metabolism of Terpenoids and Polyketides,Ceca,Antemortem,5,1.559264615,0.132070916,0.059063909
+204,Metabolism of Terpenoids and Polyketides,Ceca,Postmortem,9,1.481622997,0.148271947,0.049423982
+205,Metabolism of Terpenoids and Polyketides,Large Intestine,Antemortem,5,2.291205919,0.243112377,0.10872316
+206,Metabolism of Terpenoids and Polyketides,Large Intestine,Postmortem,12,1.487513743,0.05594689,0.016150476
+207,Metabolism of Terpenoids and Polyketides,Cloaca,Antemortem,2,1.617377377,0.193592998,0.136890922
+208,Metabolism of Terpenoids and Polyketides,Cloaca,Postmortem,9,1.43464171,0.023181809,0.00772727
+209,Nervous System,Small Intestine,Antemortem,4,0.090984049,0.028885835,0.014442918
+210,Nervous System,Small Intestine,Postmortem,11,0.05419406,0.010606025,0.003197837
+211,Nervous System,Ceca,Antemortem,5,0.055467335,0.008702176,0.003891731
+212,Nervous System,Ceca,Postmortem,9,0.06153052,0.004601168,0.001533723
+213,Nervous System,Large Intestine,Antemortem,5,0.065338299,0.027064583,0.01210365
+214,Nervous System,Large Intestine,Postmortem,12,0.052903229,0.003279082,0.00094659
+215,Nervous System,Cloaca,Antemortem,2,0.062898162,0.008956157,0.006332959
+216,Nervous System,Cloaca,Postmortem,9,0.053417,0.00320027,0.001066757
+217,Neurodegenerative Diseases,Small Intestine,Antemortem,4,0.262813267,0.133719087,0.066859544
+218,Neurodegenerative Diseases,Small Intestine,Postmortem,11,0.147742736,0.019697337,0.005938971
+219,Neurodegenerative Diseases,Ceca,Antemortem,5,0.199693971,0.035968757,0.016085717
+220,Neurodegenerative Diseases,Ceca,Postmortem,9,0.127258356,0.022286938,0.007428979
+221,Neurodegenerative Diseases,Large Intestine,Antemortem,5,0.262614563,0.079518458,0.035561735
+222,Neurodegenerative Diseases,Large Intestine,Postmortem,12,0.152946453,0.022882583,0.006605633
+223,Neurodegenerative Diseases,Cloaca,Antemortem,2,0.202996849,0.032017833,0.022640027
+224,Neurodegenerative Diseases,Cloaca,Postmortem,9,0.158480233,0.011661214,0.003887071
+225,Nucleotide Metabolism,Small Intestine,Antemortem,4,3.166600649,0.418068703,0.209034351
+226,Nucleotide Metabolism,Small Intestine,Postmortem,11,3.067535759,0.272878209,0.082275876
+227,Nucleotide Metabolism,Ceca,Antemortem,5,3.052806178,0.40502789,0.181133979
+228,Nucleotide Metabolism,Ceca,Postmortem,9,3.379029417,0.503099376,0.167699792
+229,Nucleotide Metabolism,Large Intestine,Antemortem,5,3.032652958,0.366073562,0.163713074
+230,Nucleotide Metabolism,Large Intestine,Postmortem,12,3.031138401,0.233403302,0.06737773
+231,Nucleotide Metabolism,Cloaca,Antemortem,2,3.040188664,0.232099028,0.164118796
+232,Nucleotide Metabolism,Cloaca,Postmortem,9,2.829572167,0.178124202,0.059374734
+233,Poorly Characterized,Small Intestine,Antemortem,4,5.274075283,0.416568504,0.208284252
+234,Poorly Characterized,Small Intestine,Postmortem,11,5.235873,0.233212279,0.070316148
+235,Poorly Characterized,Ceca,Antemortem,5,5.309015465,0.283585707,0.126823384
+236,Poorly Characterized,Ceca,Postmortem,9,5.153839083,0.540648935,0.180216312
+237,Poorly Characterized,Large Intestine,Antemortem,5,5.127977931,0.092898321,0.041545392
+238,Poorly Characterized,Large Intestine,Postmortem,12,5.250104861,0.232637342,0.067156616
+239,Poorly Characterized,Cloaca,Antemortem,2,5.191028599,0.168997544,0.119499309
+240,Poorly Characterized,Cloaca,Postmortem,9,5.365628156,0.237650681,0.079216894
+241,Replication and Repair,Small Intestine,Antemortem,4,6.846013895,0.83465123,0.417325615
+242,Replication and Repair,Small Intestine,Postmortem,11,6.105190736,0.694331843,0.209348927
+243,Replication and Repair,Ceca,Antemortem,5,6.329309095,1.048337515,0.468830789
+244,Replication and Repair,Ceca,Postmortem,9,6.951015512,1.639280506,0.546426835
+245,Replication and Repair,Large Intestine,Antemortem,5,6.562218298,0.356537145,0.159448259
+246,Replication and Repair,Large Intestine,Postmortem,12,5.967501052,0.485004511,0.140008743
+247,Replication and Repair,Cloaca,Antemortem,2,6.1585491,0.616329213,0.435810566
+248,Replication and Repair,Cloaca,Postmortem,9,5.578411354,0.389053589,0.12968453
+249,Signal Transduction,Small Intestine,Antemortem,4,2.686034297,0.480259657,0.240129828
+250,Signal Transduction,Small Intestine,Postmortem,11,2.251736495,0.225222266,0.067907068
+251,Signal Transduction,Ceca,Antemortem,5,2.48855731,0.194038712,0.08677675
+252,Signal Transduction,Ceca,Postmortem,9,2.068982081,0.528952198,0.176317399
+253,Signal Transduction,Large Intestine,Antemortem,5,2.164931503,0.261519532,0.11695509
+254,Signal Transduction,Large Intestine,Postmortem,12,2.282036145,0.216998198,0.062641984
+255,Signal Transduction,Cloaca,Antemortem,2,2.295611163,0.094763574,0.067007966
+256,Signal Transduction,Cloaca,Postmortem,9,2.461307669,0.16021659,0.05340553
+257,Signaling Molecules and Interaction,Small Intestine,Antemortem,4,0.195359959,0.018178195,0.009089098
+258,Signaling Molecules and Interaction,Small Intestine,Postmortem,11,0.150815258,0.023690112,0.007142838
+259,Signaling Molecules and Interaction,Ceca,Antemortem,5,0.136489157,0.039458991,0.017646597
+260,Signaling Molecules and Interaction,Ceca,Postmortem,9,0.201338887,0.052494413,0.017498138
+261,Signaling Molecules and Interaction,Large Intestine,Antemortem,5,0.207478259,0.019320618,0.008640443
+262,Signaling Molecules and Interaction,Large Intestine,Postmortem,12,0.154623407,0.025902712,0.007477469
+263,Signaling Molecules and Interaction,Cloaca,Antemortem,2,0.147820173,0.035719684,0.025257631
+264,Signaling Molecules and Interaction,Cloaca,Postmortem,9,0.134021153,0.022166624,0.007388875
+265,Transcription,Small Intestine,Antemortem,4,2.555086165,0.233896907,0.116948453
+266,Transcription,Small Intestine,Postmortem,11,3.221002159,0.119884567,0.036146557
+267,Transcription,Ceca,Antemortem,5,3.028972968,0.249394164,0.111532461
+268,Transcription,Ceca,Postmortem,9,3.191969668,0.279998164,0.093332721
+269,Transcription,Large Intestine,Antemortem,5,2.493332469,0.161549353,0.072247067
+270,Transcription,Large Intestine,Postmortem,12,3.240677101,0.123477804,0.035644972
+271,Transcription,Cloaca,Antemortem,2,3.07792772,0.264126341,0.186765527
+272,Transcription,Cloaca,Postmortem,9,3.297103877,0.089031361,0.02967712
+273,Translation,Small Intestine,Antemortem,4,4.162593885,0.577398893,0.288699447
+274,Translation,Small Intestine,Postmortem,11,3.768938238,0.479750705,0.14465028
+275,Translation,Ceca,Antemortem,5,3.837043694,0.744174836,0.332805104
+276,Translation,Ceca,Postmortem,9,4.338110802,1.130564988,0.376854996
+277,Translation,Large Intestine,Antemortem,5,3.908827352,0.441117312,0.197273659
+278,Translation,Large Intestine,Postmortem,12,3.678210826,0.336401181,0.097110656
+279,Translation,Cloaca,Antemortem,2,3.778093448,0.357231651,0.252600923
+280,Translation,Cloaca,Postmortem,9,3.359619179,0.225106116,0.075035372
+281,Transport and Catabolism,Small Intestine,Antemortem,4,0.274622605,0.048105747,0.024052873
+282,Transport and Catabolism,Small Intestine,Postmortem,11,0.146562797,0.018750327,0.005653436
+283,Transport and Catabolism,Ceca,Antemortem,5,0.178339185,0.032408573,0.014493554
+284,Transport and Catabolism,Ceca,Postmortem,9,0.137974163,0.036265049,0.01208835
+285,Transport and Catabolism,Large Intestine,Antemortem,5,0.373912567,0.052856024,0.023637932
+286,Transport and Catabolism,Large Intestine,Postmortem,12,0.146471933,0.021312132,0.006152283
+287,Transport and Catabolism,Cloaca,Antemortem,2,0.208414839,0.068701752,0.048579475
+288,Transport and Catabolism,Cloaca,Postmortem,9,0.144503106,0.012338709,0.004112903
+289,Xenobiotics Biodegradation and Metabolism,Small Intestine,Antemortem,4,3.169743096,0.540297066,0.270148533
+290,Xenobiotics Biodegradation and Metabolism,Small Intestine,Postmortem,11,2.445470051,0.155247104,0.046808763
+291,Xenobiotics Biodegradation and Metabolism,Ceca,Antemortem,5,2.550214473,0.411238392,0.1839114
+292,Xenobiotics Biodegradation and Metabolism,Ceca,Postmortem,9,2.296783083,0.217782664,0.072594221
+293,Xenobiotics Biodegradation and Metabolism,Large Intestine,Antemortem,5,4.546482563,0.992111663,0.443685824
+294,Xenobiotics Biodegradation and Metabolism,Large Intestine,Postmortem,12,2.485401394,0.21538792,0.062177137
+295,Xenobiotics Biodegradation and Metabolism,Cloaca,Antemortem,2,2.855772125,0.353908783,0.2502513
+296,Xenobiotics Biodegradation and Metabolism,Cloaca,Postmortem,9,2.46683411,0.199143918,0.066381306

@@ -1,0 +1,29 @@
+Phylum,Sample.Type,N,mean,sd,se
+Acidobacteria,Ceca,5,0,0,0
+Actinobacteria,Ceca,5,0.68,1.127829774,0.504380809
+Bacteroidetes,Ceca,5,0,0,0
+Firmicutes,Ceca,5,14.68,11.37945517,5.089047062
+Proteobacteria,Ceca,5,39.8,30.67865708,13.71991254
+Tenericutes,Ceca,5,21.48,27.76097981,12.4150876
+Other,Ceca,5,23.36,0,0
+Acidobacteria,Cloaca,2,0.6,0.848528137,0.6
+Actinobacteria,Cloaca,2,3.8,2.2627417,1.6
+Bacteroidetes,Cloaca,2,8.2,7.919595949,5.6
+Firmicutes,Cloaca,2,39.9,16.54629868,11.7
+Proteobacteria,Cloaca,2,36.4,20.93036072,14.8
+Tenericutes,Cloaca,2,4.5,4.666904756,3.3
+Other,Cloaca,2,6.6,0,0
+Acidobacteria,Large Intestine,5,1.014799154,2.269159893,1.014799154
+Actinobacteria,Large Intestine,5,10.92093023,12.49119149,5.586230657
+Bacteroidetes,Large Intestine,5,2.44794926,2.426369166,1.085105279
+Firmicutes,Large Intestine,5,10.64913319,10.20018336,4.561660674
+Proteobacteria,Large Intestine,5,13.8751797,5.823802393,2.604483608
+Tenericutes,Large Intestine,5,25.25437632,32.65166766,14.6022697
+Other,Large Intestine,5,35.83763214,0,0
+Acidobacteria,Small Intestine,3,6.112365591,9.556072584,5.517201079
+Actinobacteria,Small Intestine,3,7.384946237,10.36816012,5.986060039
+Bacteroidetes,Small Intestine,3,12.62634409,3.674342351,2.121382545
+Firmicutes,Small Intestine,3,26.79516129,28.57153003,16.49578055
+Proteobacteria,Small Intestine,3,41.45591398,31.891596,18.41262153
+Tenericutes,Small Intestine,3,0.066666667,0.115470054,0.066666667
+Other,Small Intestine,3,5.558602151,0,0

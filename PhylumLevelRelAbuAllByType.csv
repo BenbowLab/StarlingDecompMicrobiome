@@ -1,0 +1,57 @@
+"","Phylum","Sample.Type","Anti_Post","N","mean","sd","se"
+"1","Acidobacteria","Small Intestine","Antemortem",4,6.0337291409014,12.0269308214175,6.01346541070875
+"2","Acidobacteria","Small Intestine","Postmortem",11,0,0,0
+"3","Acidobacteria","Ceca","Antemortem",5,0,0,0
+"4","Acidobacteria","Ceca","Postmortem",9,0,0,0
+"5","Acidobacteria","Large Intestine","Antemortem",5,1.05423522242535,2.35734162161769,1.05423522242535
+"6","Acidobacteria","Large Intestine","Postmortem",12,0,0,0
+"7","Acidobacteria","Cloaca","Antemortem",2,0,0,0
+"8","Acidobacteria","Cloaca","Postmortem",9,0,0,0
+"9","Actinobacteria","Small Intestine","Antemortem",4,12.9158312735084,8.83587399723502,4.41793699861751
+"10","Actinobacteria","Small Intestine","Postmortem",11,0.00977830368410102,0.0266264024024467,0.00802816238963031
+"11","Actinobacteria","Ceca","Antemortem",5,0.924625814485356,1.84627842722842,0.825680813734831
+"12","Actinobacteria","Ceca","Postmortem",9,0.337097415284575,0.904431386145662,0.301477128715221
+"13","Actinobacteria","Large Intestine","Antemortem",5,7.40096312581084,7.79477093870493,3.48592753759681
+"14","Actinobacteria","Large Intestine","Postmortem",12,0.180447262286928,0.411287778587985,0.118728554841088
+"15","Actinobacteria","Cloaca","Antemortem",2,2.65490092943355,0.2513299278778,0.177717096317518
+"16","Actinobacteria","Cloaca","Postmortem",9,0.187732923114584,0.462206633052269,0.15406887768409
+"17","Bacteroidetes","Small Intestine","Antemortem",4,4.91943971370568,9.30477034893163,4.65238517446581
+"18","Bacteroidetes","Small Intestine","Postmortem",11,0.00511361120563469,0.0137501326578775,0.00414582098579927
+"19","Bacteroidetes","Ceca","Antemortem",5,0,0,0
+"20","Bacteroidetes","Ceca","Postmortem",9,0.332339579388956,0.781320343925199,0.260440114641733
+"21","Bacteroidetes","Large Intestine","Antemortem",5,4.50049970951037,6.2074920513257,2.77607483931078
+"22","Bacteroidetes","Large Intestine","Postmortem",12,0.195327504559933,0.439394875101287,0.126842374710135
+"23","Bacteroidetes","Cloaca","Antemortem",2,0.997854077253219,1.41117876932079,0.997854077253219
+"24","Bacteroidetes","Cloaca","Postmortem",9,0.0131420167044111,0.0199708683868648,0.00665695612895493
+"25","Firmicutes","Small Intestine","Antemortem",4,18.5032160128303,12.6542731787213,6.32713658936066
+"26","Firmicutes","Small Intestine","Postmortem",11,43.0591249657831,19.8294519921539,5.97880473239453
+"27","Firmicutes","Ceca","Antemortem",5,18.539584436951,12.6848901529499,5.67285533382273
+"28","Firmicutes","Ceca","Postmortem",9,50.2210498608212,34.5336989304135,11.5112329768045
+"29","Firmicutes","Large Intestine","Antemortem",5,25.9007540594898,27.3451791134305,12.2291358709076
+"30","Firmicutes","Large Intestine","Postmortem",12,48.1350393108306,22.3072651061966,6.43955275697346
+"31","Firmicutes","Cloaca","Antemortem",2,48.430622625356,23.5156103158246,16.6280475180599
+"32","Firmicutes","Cloaca","Postmortem",9,27.8895742117504,12.3827565990954,4.12758553303179
+"33","Proteobacteria","Small Intestine","Antemortem",4,51.9580456692291,24.2163437185006,12.1081718592503
+"34","Proteobacteria","Small Intestine","Postmortem",11,56.7664208743606,19.9035584609253,6.00114867343571
+"35","Proteobacteria","Ceca","Antemortem",5,47.6329734781474,33.4528029676274,14.9605482947043
+"36","Proteobacteria","Ceca","Postmortem",9,48.287259370518,34.9386578190729,11.6462192730243
+"37","Proteobacteria","Large Intestine","Antemortem",5,25.2706515285802,13.4724782184471,6.02507542436661
+"38","Proteobacteria","Large Intestine","Postmortem",12,51.4720567441086,22.1139303668718,6.38374182507703
+"39","Proteobacteria","Cloaca","Antemortem",2,41.2569595604076,14.0943584058606,9.96621640525765
+"40","Proteobacteria","Cloaca","Postmortem",9,71.8221305975782,12.1909389534752,4.06364631782508
+"41","Tenericutes","Small Intestine","Antemortem",4,0,0,0
+"42","Tenericutes","Small Intestine","Postmortem",11,0,0,0
+"43","Tenericutes","Ceca","Antemortem",5,29.5525895540615,34.1246336243247,15.261000098253
+"44","Tenericutes","Ceca","Postmortem",9,0,0,0
+"45","Tenericutes","Large Intestine","Antemortem",5,30.0023232068703,33.1930227448626,14.8443710472419
+"46","Tenericutes","Large Intestine","Postmortem",12,0,0,0
+"47","Tenericutes","Cloaca","Antemortem",2,4.58154506437768,6.47928316666643,4.58154506437768
+"48","Tenericutes","Cloaca","Postmortem",9,0.0618405775152708,0.185521732545813,0.0618405775152708
+"49","Verrucomicrobia","Small Intestine","Antemortem",4,0.0474213521348556,0.0948427042697112,0.0474213521348556
+"50","Verrucomicrobia","Small Intestine","Postmortem",11,0.111836616618947,0.314846540530621,0.0949298037710448
+"51","Verrucomicrobia","Ceca","Antemortem",5,0,0,0
+"52","Verrucomicrobia","Ceca","Postmortem",9,0,0,0
+"53","Verrucomicrobia","Large Intestine","Antemortem",5,5.33898305084746,11.9383290324141,5.33898305084746
+"54","Verrucomicrobia","Large Intestine","Postmortem",12,0,0,0
+"55","Verrucomicrobia","Cloaca","Antemortem",2,0,0,0
+"56","Verrucomicrobia","Cloaca","Postmortem",9,0,0,0

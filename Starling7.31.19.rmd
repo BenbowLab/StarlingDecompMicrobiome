@@ -1,0 +1,260 @@
+---
+title: "Starling 7.31.19"
+author: "JReceveur"
+
+output: 
+  html_document:
+  toc: true
+toc_depth: 3
+toc_float: true
+code_folding: hide
+---
+  
+  ```{r setup, include=FALSE}
+knitr::opts_chunk$set(fig.width=14, fig.height=10)
+knitr::opts_chunk$set(fig.align="center")
+```
+
+
+``` {r import, message=FALSE, warning=FALSE}
+library(vegan)
+library(MASS)
+library(ggplot2)
+library(plyr)
+library(dplyr)
+library(magrittr)
+library(scales)
+library(grid)
+library(reshape2)
+library(phyloseq)
+library(randomForest)
+library(knitr)
+library(ape)
+library(ggpubr)
+cbPalette <- c("#999999", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#000000","#CC79A7")
+theme_set(theme_bw(base_size = 18)+theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()))
+biom=import_biom("C:\\Users\\Joe Receveur\\Documents\\MSU data\\Starling\\table-with-taxonomy500.biom",parseFunction= parse_taxonomy_greengenes)
+meta=read.table("C:\\Users\\Joe Receveur\\Documents\\Virtual Box\\Starling\\StarlingMeta4.18.txt",header=TRUE)
+meta=sample_data(meta)
+sample_names(meta)=meta$SampleID
+physeq=merge_phyloseq(biom,meta) 
+physeq <- subset_taxa(physeq, Family != "mitochondria" & Class != "Chloroplast")
+
+physeq
+```
+
+# Overview
+
+##Alpha diversity
+For other alpha diversity metrics, see QIIME output files
+
+```{r arichness, warning=FALSE}
+plot_richness(physeq, x="Hours",color="Hours", measures=c("Simpson"))+geom_boxplot(aes(x=Hours, y=value, color=Hours), alpha=0.05)+facet_wrap(~Sample_Type)+ylab("Simpsons diversity")+ theme(axis.text.x = element_text(angle = 0, hjust = 1))
+
+plot_richness(physeq, x="Hours",color="Hours", measures=c("Shannon"))+geom_boxplot(aes(x=Hours, y=value, color=Hours), alpha=0.05)+facet_wrap(~Sample_Type)+ylab("Shannon diversity")+ theme(axis.text.x = element_text(angle = 0, hjust = 1))
+
+
+```
+
+##Taxonomic Composition  
+
+```{r,warning=FALSE}
+GPr  = transform_sample_counts(physeq, function(x) x / sum(x) ) #transform samples based on relative abundance
+GPrPhylum=tax_glom(GPr,"Phylum")
+PhylumLevel = filter_taxa(GPrPhylum, function(x) mean(x) > 1e-2, TRUE) #filter out any taxa lower tha 0.1%
+#PhylumLevel  = transform_sample_counts(PhylumLevel, function(x) x / sum(x) )
+GPrFamily=tax_glom(GPr,"Family")
+FamilyLevel = filter_taxa(GPrFamily, function(x) mean(x) > 1e-2, TRUE) #filter out any taxa lower tha 1%
+#FamilyLevel  = transform_sample_counts(FamilyLevel, function(x) x / sum(x) )
+GPrGenus=tax_glom(GPr,"Genus")
+GenusLevel = filter_taxa(GPrGenus, function(x) mean(x) > 1e-2, TRUE) #filter out any taxa lower tha 1%
+```
+
+```{r}
+df <- psmelt(PhylumLevel)
+df$Abundance=df$Abundance*100
+Trtdata <- ddply(df, c("Phylum", "Hours","Sample_Type"), summarise,
+                 N    = length(Abundance),
+                 mean = mean(Abundance),
+                 sd   = sd(Abundance),
+                 se   = sd / sqrt(N)
+)
+#(Trtdata)
+labels <- c(Ceca = "Ceca", Cloacal_Swab = "Cloacal Swab",Large_Intestine_Tissue="Large Intestine Tissue", Small_Intestine_Contents="Small Intestine Contents",Headgut_Swab="Headgut Swab",Small_Intestine_Tissue="Small Intestine Tissue")
+cdataplot=ggplot(Trtdata, aes(x=Hours,y=mean))+geom_bar(aes(fill = Phylum),colour="black", stat="identity")+ facet_grid(~Sample_Type, labeller=labeller(Sample_Type = labels))+xlab("Treatment")+ylab("Relative Abundance (> 1%)") + theme(axis.text.x = element_text(angle = 0, hjust = 0.5))+theme(axis.title.x=element_blank())+
+  scale_x_discrete(labels=c("0 hrs", "24 hrs", "48 hrs","72 hrs"))+ theme(axis.text.x = element_text(angle = 45, hjust = 1))+ scale_fill_manual(values=cbPalette)
+cdataplot# position = "fill"#+geom_errorbar(aes(ymin=mean-se,ymax=mean+se),color="black",width=1)+geom_line(size=1.5,linetype="dashed")+geom_point(size=6)+ylab("Rel Abundance Algal Taxa (%)")+xlab("")+scale_colour_manual(values=cbPalette)
+Trtdata <- ddply(df, c("Phylum", "Hours"), summarise,
+                 N    = length(Abundance),
+                 mean = mean(Abundance),
+                 sd   = sd(Abundance),
+                 se   = sd / sqrt(N))
+
+ggplot(Trtdata, aes(x=Hours,y=mean))+geom_bar(aes(fill = Hours),colour="black", stat="identity")+ facet_grid(~Phylum)+xlab("Hours")+ylab("Relative Abundance (> 1%)") + theme(axis.text.x = element_text(angle = 0, hjust = 0.5))+theme(axis.title.x=element_blank())+geom_errorbar(aes(ymin=mean-se,ymax=mean+se))+theme(axis.title.x=element_blank())+
+  scale_x_discrete(labels=c("0 hrs", "24 hrs", "48 hrs","72 hrs"))+ theme(axis.text.x = element_text(angle = 45, hjust = 1))
+Means=compare_means(Abundance ~ Hours, data = df, 
+                    group.by = "Phylum", p.adjust.method = "fdr")
+#head(Means)
+keeps <- c("Phylum","group1","group2","p.format","p.adj","method","p.signif")
+keeps=Means[keeps]
+#keeps
+
+
+test3 <- list('Phylum'= keeps$Phylum,'group1'=keeps$group1,'group2'= keeps$group2 ,'p'=keeps$p.format,'p.adj'=keeps$p.adj,p.signif=keeps$p.signif,'Method'=keeps$method)
+test3= as.data.frame(test3)
+#test3
+FilteredResults<-test3[!(test3$p.adj>0.1),]            
+FilteredResults
+```
+
+
+```{r}
+df <- psmelt(FamilyLevel)
+df$Abundance=df$Abundance*100
+Trtdata <- ddply(df, c("Family", "Hours","Sample_Type"), summarise,
+                 N    = length(Abundance),
+                 mean = mean(Abundance),
+                 sd   = sd(Abundance),
+                 se   = sd / sqrt(N)
+)
+#(Trtdata)
+labels <- c(Ceca = "Ceca", Cloacal_Swab = "Cloacal Swab",Large_Intestine_Tissue="Large Intestine Tissue", Small_Intestine_Contents="Small Intestine Contents",Headgut_Swab="Headgut Swab",Small_Intestine_Tissue="Small Intestine Tissue")
+cdataplot=ggplot(Trtdata, aes(x=Hours,y=mean))+geom_bar(aes(fill = Family),colour="black", stat="identity")+ facet_grid(~Sample_Type, labeller=labeller(Sample_Type = labels))+xlab("Treatment")+ylab("Relative Abundance (> 1%)") + theme(axis.text.x = element_text(angle = 0, hjust = 0.5))+theme(axis.title.x=element_blank())+
+  scale_x_discrete(labels=c("0 hrs", "24 hrs", "48 hrs","72 hrs"))+ theme(axis.text.x = element_text(angle = 45, hjust = 1))#+ scale_fill_manual(values=cbPalette)
+cdataplot# position = "fill"#+geom_errorbar(aes(ymin=mean-se,ymax=mean+se),color="black",width=1)+geom_line(size=1.5,linetype="dashed")+geom_point(size=6)+ylab("Rel Abundance Algal Taxa (%)")+xlab("")+scale_colour_manual(values=cbPalette)
+theme_set(theme_bw(base_size = 18)+theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()))
+Trtdata <- ddply(df, c("Family", "Hours"), summarise,
+                 N    = length(Abundance),
+                 mean = mean(Abundance),
+                 sd   = sd(Abundance),
+                 se   = sd / sqrt(N))
+ggplot(Trtdata, aes(x=Hours,y=mean))+geom_bar(aes(fill = Hours),colour="black", stat="identity")+ facet_grid(~Family)+xlab("Hours")+ylab("Relative Abundance (> 1%)") +theme(axis.title.x=element_blank())+geom_errorbar(aes(ymin=mean-se,ymax=mean+se))+ theme(axis.text.x = element_text(angle = 0, hjust = 0.5))+theme(axis.title.x=element_blank())+
+  scale_x_discrete(labels=c("0 hrs", "24 hrs", "48 hrs","72 hrs"))+ theme(axis.text.x = element_text(angle = 45, hjust = 1))
+Means=compare_means(Abundance ~ Hours, data = df, 
+                    group.by = "Family", p.adjust.method = "fdr")
+#head(Means)
+keeps <- c("Family","group1","group2","p.format","p.adj","method","p.signif")
+keeps=Means[keeps]
+#keeps
+
+
+test3 <- list('Family'= keeps$Family,'group1'=keeps$group1,'group2'= keeps$group2 ,'p'=keeps$p.format,'p.adj'=keeps$p.adj,p.signif=keeps$p.signif,'Method'=keeps$method)
+test3= as.data.frame(test3)
+#test3
+FilteredResults<-test3[!(test3$p.adj>0.1),]            
+FilteredResults
+```
+
+
+```{r}
+df <- psmelt(GenusLevel)
+df$Abundance=df$Abundance*100
+Trtdata <- ddply(df, c("Genus", "Hours","Sample_Type"), summarise,
+                 N    = length(Abundance),
+                 mean = mean(Abundance),
+                 sd   = sd(Abundance),
+                 se   = sd / sqrt(N)
+)
+#(Trtdata)
+labels <- c(Ceca = "Ceca", Cloacal_Swab = "Cloacal Swab",Large_Intestine_Tissue="Large Intestine Tissue", Small_Intestine_Contents="Small Intestine Contents",Headgut_Swab="Headgut Swab",Small_Intestine_Tissue="Small Intestine Tissue")
+cdataplot=ggplot(Trtdata, aes(x=Hours,y=mean))+geom_bar(aes(fill = Genus),colour="black", stat="identity")+ facet_grid(~Sample_Type)+xlab("Treatment")+ylab("Relative Abundance (> 1%)") + theme(axis.text.x = element_text(angle = 0, hjust = 0.5))+theme(axis.title.x=element_blank())+
+  scale_x_discrete(labels=c("0 hrs", "24 hrs", "48 hrs","72 hrs"))+ theme(axis.text.x = element_text(angle = 45, hjust = 1))#+ scale_fill_manual(values=cbPalette)
+cdataplot# position = "fill"#+geom_errorbar(aes(ymin=mean-se,ymax=mean+se),color="black",width=1)+geom_line(size=1.5,linetype="dashed")+geom_point(size=6)+ylab("Rel Abundance Algal Taxa (%)")+xlab("")+scale_colour_manual(values=cbPalette)
+
+Trtdata <- ddply(df, c("Genus", "Hours"), summarise,
+                 N    = length(Abundance),
+                 mean = mean(Abundance),
+                 sd   = sd(Abundance),
+                 se   = sd / sqrt(N))
+ggplot(Trtdata, aes(x=Hours,y=mean))+geom_bar(aes(fill = Hours),colour="black", stat="identity")+ facet_grid(~Genus)+xlab("Hours")+ylab("Relative Abundance (> 1%)")+theme(axis.title.x=element_blank())+geom_errorbar(aes(ymin=mean-se,ymax=mean+se))+ theme(axis.text.x = element_text(angle = 0, hjust = 0.5))+theme(axis.title.x=element_blank())+
+  scale_x_discrete(labels=c("0 hrs", "24 hrs", "48 hrs","72 hrs"))+ theme(axis.text.x = element_text(angle = 45, hjust = 1))
+Means=compare_means(Abundance ~ Hours, data = df, 
+                    group.by = "Genus", p.adjust.method = "fdr")
+#head(Means)
+keeps <- c("Genus","group1","group2","p.format","p.adj","method","p.signif")
+keeps=Means[keeps]
+#keeps
+
+
+test3 <- list('Genus'= keeps$Genus,'group1'=keeps$group1,'group2'= keeps$group2 ,'p'=keeps$p.format,'p.adj'=keeps$p.adj,p.signif=keeps$p.signif,'Method'=keeps$method)
+test3= as.data.frame(test3)
+#test3
+FilteredResults<-test3[!(test3$p.adj>0.1),]            
+FilteredResults
+
+```
+
+
+
+
+#PERMANOVA/Ordination results
+
+-All ordinations were conducted using Jensen-Shannon distance
+For weighted unifrac, see QIIME results
+-Ellipses represent 95% CI for the mean of each group
+
+##PCoA 
+
+```{r, warning=FALSE,message=FALSE}
+ord=ordinate(physeq,"PCoA", "jsd")
+ordplot=plot_ordination(physeq, ord,"samples", color="Hours")+geom_point(size=4)+scale_colour_manual(values=cbPalette)+scale_fill_manual(values=cbPalette)
+ordplot+ stat_ellipse(type= "norm",geom = "polygon", alpha = 1/4, aes(fill = Hours))+ theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank())+
+  facet_wrap(~Sample_Type)#+ theme(legend.justification=c(1,0), legend.position=c(1,0))
+```
+
+```{r, warning=FALSE,message=FALSE}
+ord=ordinate(physeq,"PCoA", "jsd")
+ordplot=plot_ordination(physeq, ord,"samples", color="Hours")+geom_point(size=4)+scale_colour_manual(values=cbPalette)+scale_fill_manual(values=cbPalette)
+ordplot+ stat_ellipse(type= "norm",geom = "polygon", alpha = 1/4, aes(fill = Hours))+ theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank())#+ theme(legend.justification=c(1,0), legend.position=c(1,0))
+```
+
+```{r, warning=FALSE,message=FALSE}
+ord=ordinate(physeq,"PCoA", "jsd")
+ordplot=plot_ordination(physeq, ord,"samples", color="Sample_Type")+geom_point(size=4)+scale_colour_manual(values=cbPalette)+scale_fill_manual(values=cbPalette)
+ordplot+ stat_ellipse(type= "norm",geom = "polygon", alpha = 1/4, aes(fill = Sample_Type))+ theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank())#+ theme(legend.justification=c(1,0), legend.position=c(1,0))
+```
+
+
+#PERMANOVAs
+
+##Sample type vs time
+See QIIME outputs for other distance metrics and pairwise results
+
+``` {r,warning=FALSE}
+GPdist=phyloseq::distance(physeq, "jsd")
+```
+
+```{r}
+adonis(GPdist ~ Sample_Type*Hours, as(sample_data(physeq), "data.frame"))
+```
+
+#Sample data
+```{r}
+physeq
+sample_data(physeq)
+```
+
+#Random Forest
+##By Treatment
+```{r Forest1}
+ForestData=GenusLevel#Change this one so you dont have to rewrite all variables
+predictors=t(otu_table(ForestData))
+dim(predictors)
+response <- as.factor(sample_data(ForestData)$Hours) #This is where you change the response variable ex Hours
+rf.data <- data.frame(response, predictors)
+MozzieForest <- randomForest(response~., data = rf.data, ntree = 1000)
+print(MozzieForest)#returns overall Random Forest results
+imp <- importance(MozzieForest)#all the steps that are imp or imp. are building a dataframe that contains info about the taxa used by the Random Forest testto classify treatment 
+imp <- data.frame(predictors = rownames(imp), imp)
+imp.sort <- arrange(imp, desc(MeanDecreaseGini))
+imp.sort$predictors <- factor(imp.sort$predictors, levels = imp.sort$predictors)
+imp.20 <- imp.sort[1:20, ]
+ggplot(imp.20, aes(x = predictors, y = MeanDecreaseGini)) +
+  geom_bar(stat = "identity", fill = "indianred") +
+  coord_flip() +
+  ggtitle("Most important OTUs for classifying  samples\n by hours")#\n in a string tells it to start a new line
+imp.20$MeanDecreaseGini
+otunames <- imp.20$predictors
+r <- rownames(tax_table(ForestData)) %in% otunames
+kable(tax_table(ForestData)[r, ])#returns a list of the most important predictors for Random Forest Classification
+```

@@ -1,0 +1,53 @@
+KEGG.Pathway,Sample.Type,N,mean,sd,se
+Amino Acid Metabolism,Ceca,5,8.637868947,0.368895895,0.16497526
+Carbohydrate Metabolism,Ceca,5,10.90548893,0.795417111,0.355721346
+Cellular Processes and Signaling,Ceca,5,4.890890448,0.580664654,0.259681128
+Energy Metabolism,Ceca,5,4.845490947,0.196730168,0.087980406
+Lipid Metabolism,Ceca,5,2.929278514,0.162002674,0.072449798
+Membrane Transport,Ceca,5,17.19020939,2.238920322,1.001275607
+Metabolism of Cofactors and Vitamins,Ceca,5,3.727840953,0.228476762,0.102177914
+Nucleotide Metabolism,Ceca,5,3.052806178,0.40502789,0.181133979
+Poorly Characterized,Ceca,5,5.309015465,0.283585707,0.126823384
+Replication and Repair,Ceca,5,6.329309095,1.048337515,0.468830789
+Translation,Ceca,5,3.837043694,0.744174836,0.332805104
+Xenobiotics Biodegradation and Metabolism,Ceca,5,2.550214473,0.411238392,0.1839114
+Other,Ceca,5,25.79454297,0,0
+Amino Acid Metabolism,Cloaca,2,8.920382167,0.494986448,0.350008274
+Carbohydrate Metabolism,Cloaca,2,11.30547018,0.648324607,0.458434726
+Cellular Processes and Signaling,Cloaca,2,4.684254184,0.568223072,0.401794387
+Energy Metabolism,Cloaca,2,4.828430236,0.121366633,0.085819169
+Lipid Metabolism,Cloaca,2,3.114826311,0.313122799,0.221411254
+Membrane Transport,Cloaca,2,17.69663549,1.651856639,1.168039031
+Metabolism of Cofactors and Vitamins,Cloaca,2,3.776725334,0.020169266,0.014261825
+Nucleotide Metabolism,Cloaca,2,3.040188664,0.232099028,0.164118796
+Poorly Characterized,Cloaca,2,5.191028599,0.168997544,0.119499309
+Replication and Repair,Cloaca,2,6.1585491,0.616329213,0.435810566
+Translation,Cloaca,2,3.778093448,0.357231651,0.252600923
+Xenobiotics Biodegradation and Metabolism,Cloaca,2,2.855772125,0.353908783,0.2502513
+Other,Cloaca,2,24.64964416,0,0
+Amino Acid Metabolism,Large Intestine,3,10.47655218,0.355819739,0.205432622
+Carbohydrate Metabolism,Large Intestine,3,10.49989766,0.573883927,0.33133204
+Cellular Processes and Signaling,Large Intestine,3,3.822426807,0.673240993,0.388695869
+Energy Metabolism,Large Intestine,3,5.361672831,0.484854235,0.279930723
+Lipid Metabolism,Large Intestine,3,3.811017605,0.291742339,0.168437518
+Membrane Transport,Large Intestine,3,13.45535418,1.24870295,0.720938985
+Metabolism of Cofactors and Vitamins,Large Intestine,3,3.980171934,0.502042075,0.289854127
+Nucleotide Metabolism,Large Intestine,3,3.177939394,0.351629161,0.203013191
+Poorly Characterized,Large Intestine,3,5.12602175,0.129491663,0.074762046
+Replication and Repair,Large Intestine,3,6.785983232,0.234622739,0.135459502
+Translation,Large Intestine,3,4.151261564,0.408643102,0.235930205
+Xenobiotics Biodegradation and Metabolism,Large Intestine,3,3.961815931,0.677793728,0.391324391
+Other,Large Intestine,3,25.38988494,0,0
+Amino Acid Metabolism,Small Intestine,3,10.35329494,0.381496548,0.220257135
+Carbohydrate Metabolism,Small Intestine,3,9.43419743,0.776240844,0.44816286
+Cellular Processes and Signaling,Small Intestine,3,4.334118431,0.595271774,0.343680319
+Energy Metabolism,Small Intestine,3,5.232941084,0.648120716,0.37419267
+Lipid Metabolism,Small Intestine,3,3.704015637,0.197307841,0.113915735
+Membrane Transport,Small Intestine,3,12.69315894,0.690583445,0.398708538
+Metabolism of Cofactors and Vitamins,Small Intestine,3,4.095436925,0.419952413,0.242459638
+Nucleotide Metabolism,Small Intestine,3,3.007745913,0.332811055,0.192148552
+Poorly Characterized,Small Intestine,3,5.323388102,0.495684833,0.286183772
+Replication and Repair,Small Intestine,3,6.515458619,0.623989801,0.36026068
+Translation,Small Intestine,3,3.935372874,0.436242932,0.251864974
+Xenobiotics Biodegradation and Metabolism,Small Intestine,3,3.431800989,0.160733761,0.09279968
+Other,Small Intestine,3,27.93907011,0,0

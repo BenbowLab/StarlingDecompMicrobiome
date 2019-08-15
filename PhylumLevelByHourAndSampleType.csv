@@ -1,0 +1,81 @@
+"","Phylum","Hours","Sample.Type","N","mean","sd","se"
+"1","Actinobacteria",0,"Small Intestine",3,7.38494623655914,10.3681601243186,5.98606003877649
+"2","Actinobacteria",0,"Ceca",5,0.68,1.12782977438973,0.50438080851674
+"3","Actinobacteria",0,"Large Intestine",5,10.9209302325581,12.4911914880759,5.58623065746088
+"4","Actinobacteria",0,"Cloaca",2,3.8,2.26274169979695,1.6
+"5","Actinobacteria",24,"Small Intestine",4,0.8,1.6,0.8
+"6","Actinobacteria",24,"Ceca",2,1.3,1.83847763108502,1.3
+"7","Actinobacteria",24,"Large Intestine",4,0.25,0.5,0.25
+"8","Actinobacteria",24,"Cloaca",4,0.7,0.808290376865476,0.404145188432738
+"9","Actinobacteria",48,"Small Intestine",4,0,0,0
+"10","Actinobacteria",48,"Ceca",4,0,0,0
+"11","Actinobacteria",48,"Large Intestine",4,0.05,0.1,0.05
+"12","Actinobacteria",48,"Cloaca",2,0.1,0.14142135623731,0.1
+"13","Actinobacteria",72,"Small Intestine",3,0,0,0
+"14","Actinobacteria",72,"Ceca",3,0.0666666666666667,0.115470053837925,0.0666666666666667
+"15","Actinobacteria",72,"Large Intestine",4,0,0,0
+"16","Actinobacteria",72,"Cloaca",3,0,0,0
+"17","Bacteroidetes",0,"Small Intestine",3,12.6263440860215,3.67434235068322,2.1213825452618
+"18","Bacteroidetes",0,"Ceca",5,0,0,0
+"19","Bacteroidetes",0,"Large Intestine",5,2.44794926004228,2.42636916562243,1.08510527856824
+"20","Bacteroidetes",0,"Cloaca",2,8.2,7.91959594928933,5.6
+"21","Bacteroidetes",24,"Small Intestine",4,3.4,5.90367117422146,2.95183558711073
+"22","Bacteroidetes",24,"Ceca",2,0.8,1.13137084989848,0.8
+"23","Bacteroidetes",24,"Large Intestine",4,0.4,0.365148371670111,0.182574185835055
+"24","Bacteroidetes",24,"Cloaca",4,0,0,0
+"25","Bacteroidetes",48,"Small Intestine",4,0.05,0.1,0.05
+"26","Bacteroidetes",48,"Ceca",4,0.351214574898785,0.341810635813521,0.170905317906761
+"27","Bacteroidetes",48,"Large Intestine",4,0.25,0.378593889720018,0.189296944860009
+"28","Bacteroidetes",48,"Cloaca",2,0,0,0
+"29","Bacteroidetes",72,"Small Intestine",3,0,0,0
+"30","Bacteroidetes",72,"Ceca",3,0.0666666666666667,0.115470053837925,0.0666666666666667
+"31","Bacteroidetes",72,"Large Intestine",4,0,0,0
+"32","Bacteroidetes",72,"Cloaca",3,0,0,0
+"33","Firmicutes",0,"Small Intestine",3,26.7951612903226,28.5715300308515,16.4957805544716
+"34","Firmicutes",0,"Ceca",5,14.68,11.3794551714922,5.08904706207361
+"35","Firmicutes",0,"Large Intestine",5,10.649133192389,10.200183358315,4.56166067443089
+"36","Firmicutes",0,"Cloaca",2,39.9,16.5462986797652,11.7
+"37","Firmicutes",24,"Small Intestine",4,38.45,27.134418487719,13.5672092438595
+"38","Firmicutes",24,"Ceca",2,28.2,37.3352380466497,26.4
+"39","Firmicutes",24,"Large Intestine",4,30.3,21.8415506165046,10.9207753082523
+"40","Firmicutes",24,"Cloaca",4,24.35,13.5984067694222,6.79920338471109
+"41","Firmicutes",48,"Small Intestine",4,48.15,20.2868594579513,10.1434297289756
+"42","Firmicutes",48,"Ceca",4,39.82004048583,22.5852611704804,11.2926305852402
+"43","Firmicutes",48,"Large Intestine",4,54.7,21.6890141162141,10.844507058107
+"44","Firmicutes",48,"Cloaca",2,28,19.5161471607487,13.8
+"45","Firmicutes",72,"Small Intestine",3,52.6,18.744599222176,10.8221994067749
+"46","Firmicutes",72,"Ceca",3,73.1333333333333,42.9000388500213,24.7683489783052
+"47","Firmicutes",72,"Large Intestine",4,56.25,21.6076375386112,10.8038187693056
+"48","Firmicutes",72,"Cloaca",3,33.6666666666667,8.09279514959654,4.67237745811606
+"49","Proteobacteria",0,"Small Intestine",3,41.4559139784946,31.8915959971903,18.4126215338646
+"50","Proteobacteria",0,"Ceca",5,39.8,30.6786570762151,13.7199125361644
+"51","Proteobacteria",0,"Large Intestine",5,13.8751797040169,5.82380239326522,2.6044836077734
+"52","Proteobacteria",0,"Cloaca",2,36.4,20.9303607231218,14.8
+"53","Proteobacteria",24,"Small Intestine",4,54.7,34.6858280377832,17.3429140188916
+"54","Proteobacteria",24,"Ceca",2,62.4,39.315137033972,27.8
+"55","Proteobacteria",24,"Large Intestine",4,63.8,24.7908585302459,12.395429265123
+"56","Proteobacteria",24,"Cloaca",4,73.8,12.6343447264457,6.31717236322286
+"57","Proteobacteria",48,"Small Intestine",4,50.25,21.0481194726116,10.5240597363058
+"58","Proteobacteria",48,"Ceca",4,53.0587044534413,22.9975312462211,11.4987656231106
+"59","Proteobacteria",48,"Large Intestine",4,44.2,21.0694091041965,10.5347045520983
+"60","Proteobacteria",48,"Cloaca",2,71.7,19.0918830920368,13.5
+"61","Proteobacteria",72,"Small Intestine",3,47.0666666666667,18.6078836339153,10.7432666250902
+"62","Proteobacteria",72,"Ceca",3,24.3333333333333,40.2474015724411,23.2368481320318
+"63","Proteobacteria",72,"Large Intestine",4,43.55,21.5681091738088,10.7840545869044
+"64","Proteobacteria",72,"Cloaca",3,66.3333333333333,8.09279514959653,4.67237745811606
+"65","Tenericutes",0,"Small Intestine",3,0.0666666666666667,0.115470053837925,0.0666666666666667
+"66","Tenericutes",0,"Ceca",5,21.48,27.7609798097978,12.4150875953414
+"67","Tenericutes",0,"Large Intestine",5,25.2543763213531,32.6516676642675,14.6022696952068
+"68","Tenericutes",0,"Cloaca",2,4.5,4.66690475583121,3.3
+"69","Tenericutes",24,"Small Intestine",4,0.3,0.6,0.3
+"70","Tenericutes",24,"Ceca",2,0,0,0
+"71","Tenericutes",24,"Large Intestine",4,0,0,0
+"72","Tenericutes",24,"Cloaca",4,0.1,0.2,0.1
+"73","Tenericutes",48,"Small Intestine",4,0,0,0
+"74","Tenericutes",48,"Ceca",4,0,0,0
+"75","Tenericutes",48,"Large Intestine",4,0.05,0.1,0.05
+"76","Tenericutes",48,"Cloaca",2,0,0,0
+"77","Tenericutes",72,"Small Intestine",3,0,0,0
+"78","Tenericutes",72,"Ceca",3,0,0,0
+"79","Tenericutes",72,"Large Intestine",4,0,0,0
+"80","Tenericutes",72,"Cloaca",3,0,0,0
