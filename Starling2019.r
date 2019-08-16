@@ -100,6 +100,8 @@ head(sample_data(PiCRUST))
 
 #Relative abundances
 #######
+#Taxonomic Filtering
+########
 GPr  = transform_sample_counts(physeq, function(x) x / sum(x) ) #transform samples based on relative abundance
 GPrPhylum=tax_glom(GPr,"Phylum")
 PhylumLevel = filter_taxa(GPrPhylum, function(x) mean(x) > 1e-3, TRUE) #filter out any taxa lower tha 0.1%
@@ -756,6 +758,54 @@ Means=compare_means(shannon ~ Sample_Type, data = AntimortemDiv, method= "wilcox
                     , p.adjust.method = "fdr")
 Means
 
+
+#######################
+#Beta dispersion split by sample type
+#########################
+#All grouped Antemortem vs post 
+GPdist=phyloseq::distance(physeq, "jaccard")
+beta=betadisper(GPdist, sample_data(physeq)$Anti_Post)
+permutest(beta)
+boxplot(beta)
+beta
+
+TukeyHSD(beta, which = "group", ordered = FALSE,
+         conf.level = 0.95)
+#Large Intestine
+Subset<-subset_samples(physeq,Sample.Type=="Large Intestine")
+Subset
+GPdist=phyloseq::distance(Subset, "jaccard")
+beta=betadisper(GPdist, sample_data(Subset)$Anti_Post)
+permutest(beta)
+boxplot(beta)
+beta
+
+TukeyHSD(beta, which = "group", ordered = FALSE,
+         conf.level = 0.95)
+
+#Small Intestine
+Subset<-subset_samples(physeq,Sample.Type=="Small Intestine")
+sample_data(Subset)
+GPdist=phyloseq::distance(Subset, "jaccard")
+beta=betadisper(GPdist, sample_data(Subset)$Anti_Post)
+permutest(beta)
+boxplot(beta)
+beta
+
+TukeyHSD(beta, which = "group", ordered = FALSE,
+         conf.level = 0.95)
+
+#Ceca
+Subset<-subset_samples(physeq,Sample.Type=="Ceca")
+sample_data(Subset)
+GPdist=phyloseq::distance(Subset, "jaccard")
+beta=betadisper(GPdist, sample_data(Subset)$Anti_Post)
+permutest(beta)
+boxplot(beta)
+beta
+
+TukeyHSD(beta, which = "group", ordered = FALSE,
+         conf.level = 0.95)
 ########################
 #Differences in beta diversity antemortem
 #######################
