@@ -48,9 +48,8 @@ sample_data(physeq)
 physeq
 
 
-############
-#Deseq biom table import 
-###################
+
+#Deseq
 
 biom=import_biom("C:\\Users\\Joe Receveur\\Documents\\MSU data\\Starling\\table-with-taxonomyNoR.biom",parseFunction= parse_taxonomy_greengenes)
 biom
@@ -758,7 +757,125 @@ Means=compare_means(shannon ~ Sample_Type, data = AntimortemDiv, method= "wilcox
                     , p.adjust.method = "fdr")
 Means
 
+####################
+#Differences in alpha diversity postmortem
+###################
+#Shannon By sample type
+Diversity=read.table("StarlingMeta4.18WDiversity.txt",header=TRUE) #File from QIIME OUTPUT
+head(Diversity)
+PostmortemDiv <- subset(Diversity, Anti_Post == 'Post_Mortem')
+head(PostmortemDiv)
 
+kruskal.test(shannon~ Sample_Type, data=PostmortemDiv)
+Means=compare_means(shannon ~ Sample_Type, data = AntimortemDiv, method= "wilcox",
+                    , p.adjust.method = "fdr")
+Means
+
+#Faith's Diversity by sample type
+head(Diversity)
+kruskal.test(faith_pd~ Sample_Type, data=AntimortemDiv)
+Means=compare_means(shannon ~ Sample_Type, data = AntimortemDiv, method= "wilcox",
+                    , p.adjust.method = "fdr")
+Means
+
+#Shannon By hour Large Intestine
+PostmortemDiv <- subset(Diversity, Anti_Post == 'Post_Mortem'&Sample_Type=="Large_Intestine_Tissue")
+head(PostmortemDiv)
+
+kruskal.test(shannon~ Hours, data=PostmortemDiv)
+
+#Faith's Diversity by hour Large Intestine
+kruskal.test(faith_pd~ Hours, data=PostmortemDiv)
+
+#Shannon By hour Small Intestine
+PostmortemDiv <- subset(Diversity, Anti_Post == 'Post_Mortem'&Sample_Type=="Small_Intestine_Tissue")
+head(PostmortemDiv)
+
+kruskal.test(shannon~ Hours, data=PostmortemDiv)
+
+#Faith's Diversity by hour Small Intestine
+kruskal.test(faith_pd~ Hours, data=PostmortemDiv)
+
+#Shannon By hour Ceca
+PostmortemDiv <- subset(Diversity, Anti_Post == 'Post_Mortem'&Sample_Type=="Ceca")
+head(PostmortemDiv)
+
+kruskal.test(shannon~ Hours, data=PostmortemDiv)
+
+#Faith's Diversity by hour Ceca
+kruskal.test(faith_pd~ Hours, data=PostmortemDiv)
+
+#Shannon By hour Cloaca
+PostmortemDiv <- subset(Diversity, Anti_Post == 'Post_Mortem'&Sample_Type=="Cloacal_Swab")
+head(PostmortemDiv)
+kruskal.test(shannon~ Hours, data=PostmortemDiv)
+
+#Faith's Diversity by hour Cloaca
+kruskal.test(faith_pd~ Hours, data=PostmortemDiv)
+
+######################
+#Differences in alpha diversity antemortem vs post split by sample type 
+###################
+#Shannon Ante-Post Large Intestine
+PostmortemDiv <- subset(Diversity,Sample_Type=="Large_Intestine_Tissue")
+head(PostmortemDiv)
+
+kruskal.test(shannon~ Anti_Post, data=PostmortemDiv)
+Trtdata <- ddply(PostmortemDiv, c("Anti_Post"), summarise,
+                 N    = length(shannon),
+                 mean = mean(shannon),
+                 sd   = sd(shannon),
+                 se   = sd / sqrt(N))
+Trtdata
+
+
+
+#Faith's Diversity Ante-Post Large Intestine
+kruskal.test(faith_pd~ Anti_Post, data=PostmortemDiv)
+Trtdata <- ddply(PostmortemDiv, c("Anti_Post"), summarise,
+                 N    = length(faith_pd),
+                 mean = mean(faith_pd),
+                 sd   = sd(faith_pd),
+                 se   = sd / sqrt(N))
+Trtdata
+#Shannon By Amte-Post Small Intestine
+PostmortemDiv <- subset(Diversity, Sample_Type=="Small_Intestine_Tissue")
+head(PostmortemDiv)
+
+kruskal.test(shannon~ Anti_Post, data=PostmortemDiv)
+Trtdata <- ddply(PostmortemDiv, c("Anti_Post"), summarise,
+                 N    = length(shannon),
+                 mean = mean(shannon),
+                 sd   = sd(shannon),
+                 se   = sd / sqrt(N))
+Trtdata
+#Faith's Diversity by Ante-Post Small Intestine
+kruskal.test(faith_pd~ Anti_Post, data=PostmortemDiv)
+Trtdata <- ddply(PostmortemDiv, c("Anti_Post"), summarise,
+                 N    = length(faith_pd),
+                 mean = mean(faith_pd),
+                 sd   = sd(faith_pd),
+                 se   = sd / sqrt(N))
+Trtdata
+#Shannon By Ante-Post Ceca
+PostmortemDiv <- subset(Diversity, Sample_Type=="Ceca")
+head(PostmortemDiv)
+
+kruskal.test(shannon~ Anti_Post, data=PostmortemDiv)
+Trtdata <- ddply(PostmortemDiv, c("Anti_Post"), summarise,
+                 N    = length(shannon),
+                 mean = mean(shannon),
+                 sd   = sd(shannon),
+                 se   = sd / sqrt(N))
+Trtdata
+#Faith's Diversity by Ante-Post Ceca
+kruskal.test(faith_pd~ Anti_Post, data=PostmortemDiv)
+Trtdata <- ddply(PostmortemDiv, c("Anti_Post"), summarise,
+                 N    = length(faith_pd),
+                 mean = mean(faith_pd),
+                 sd   = sd(faith_pd),
+                 se   = sd / sqrt(N))
+Trtdata
 #######################
 #Beta dispersion split by sample type
 #########################
@@ -810,35 +927,35 @@ TukeyHSD(beta, which = "group", ordered = FALSE,
 #Differences in beta diversity antemortem
 #######################
 Antimortem=subset_samples(physeq, Anti_Post== "Antemortem")
-AntimortemWunifrac=subset_samples(Antimortem, Sample.Type!= "Cloacal_Swab")
+AntimortemJaccard=subset_samples(Antimortem, Sample.Type!= "Cloacal_Swab")
 
-GPdistAntemortemWUnifrac=phyloseq::distance(AntimortemWunifrac, "wunifrac")
-adonis(GPdistAntemortemWUnifrac ~ Sample.Type, as(sample_data(AntimortemWunifrac), "data.frame"))
-
+GPdistAntemortemJaccard=phyloseq::distance(AntimortemJaccard, "jaccard")
+adonis(GPdistAntemortemJaccard ~ Sample.Type, as(sample_data(AntimortemJaccard), "data.frame"))
+#F = 1.116, P = 0.125
 #####################
 #Differences in beta diversity antemortem vs postmortem by sample type
 #####################
 #Small Intestine
 SmallIntestine=subset_samples(physeq,Sample.Type=="Small Intestine")
 sample_data(SmallIntestine)
-SmallIntestineOrd=phyloseq::distance(SmallIntestine, "wunifrac") #Tree will not be a submultiple as some of the taxa are subset out
+SmallIntestineOrd=phyloseq::distance(SmallIntestine, "jaccard") #Tree will not be a submultiple as some of the taxa are subset out
 adonis(SmallIntestineOrd ~ Anti_Post, as(sample_data(SmallIntestine), "data.frame"))
-
+#F= 1.87, P = 0.011
 #Large Intestine
 LargeIntestine=subset_samples(physeq,Sample.Type=="Large Intestine")
 sample_data(LargeIntestine)
-LargeIntestineOrd=phyloseq::distance(LargeIntestine, "wunifrac")
+LargeIntestineOrd=phyloseq::distance(LargeIntestine, "jaccard")
 adonis(LargeIntestineOrd ~ Anti_Post, as(sample_data(LargeIntestine), "data.frame"))
-
+# F = 2.49, P = 0.001
 #Cloaca Not run as Cloaca only has 2 antemortem samples
 Cloaca=subset_samples(physeq,Sample.Type=="Cloaca")
 sample_data(Cloaca)
-CloacaOrd=phyloseq::distance(Cloaca, "wunifrac")
+CloacaOrd=phyloseq::distance(Cloaca, "jaccard")
 adonis(CloacaOrd ~ Anti_Post, as(sample_data(Cloaca), "data.frame"))
 #Ceca
 Ceca=subset_samples(physeq,Sample.Type=="Ceca")
 sample_data(Ceca)
-CecaOrd=phyloseq::distance(Ceca, "wunifrac")
+CecaOrd=phyloseq::distance(Ceca, "jaccard")
 adonis(CecaOrd ~ Anti_Post, as(sample_data(Ceca), "data.frame"))
 
 
@@ -1155,7 +1272,7 @@ sample_data(physeq)$Sample.Type = factor(sample_data(physeq)$Sample.Type, levels
 Antimortem=subset_samples(physeq, Anti_Post== "Antemortem")
 Antimortem
 sample_data(Antimortem)
-ord=ordinate(Antimortem,"PCoA", "wunifrac") #other common methods besides for weighted unifrac include jaccard, bray, jsd
+ord=ordinate(Antimortem,"PCoA", "jaccard") #other common methods besides for weighted unifrac include jaccard, bray, jsd
 ordplot=plot_ordination(Antimortem, ord,"samples", color="Sample.Type")+geom_point(size=4)+scale_colour_manual(name="Sample Type",values=cbPalette)+scale_fill_manual(values=cbPalette)
 ordplot2B<-ordplot+ theme(legend.position=c(0.7,0.75),legend.title = element_blank(),legend.background = element_rect(color="black"))
 #Remove legend title+facet_wrap(~Anti_Post)+ stat_ellipse(type= "norm",geom = "polygon", alpha = 1/4, aes(fill = Anti_Post))
@@ -1278,36 +1395,36 @@ dev.off()
 #Small Intestine
 SmallIntestine=subset_samples(physeq,Sample.Type=="Small Intestine")
 sample_data(SmallIntestine)
-SmallIntestineOrd=phyloseq::distance(SmallIntestine, "wunifrac") #Tree will not be a submultiple as some of the taxa are subset out
+SmallIntestineOrd=phyloseq::distance(SmallIntestine, "jaccard") #Tree will not be a submultiple as some of the taxa are subset out
 adonis(SmallIntestineOrd ~ Anti_Post, as(sample_data(SmallIntestine), "data.frame"))
 
-#F1,12 = 6.06, P = 0.033
+#F1,12 = 1.87, P = 0.007
 
 #Ceca
 Ceca=subset_samples(physeq,Sample.Type=="Ceca")
 sample_data(Ceca)
-CecaOrd=phyloseq::distance(Ceca, "wunifrac")
+CecaOrd=phyloseq::distance(Ceca, "jaccard")
 adonis(CecaOrd ~ Anti_Post, as(sample_data(Ceca), "data.frame"))
-#F1,12 =2.43, P = 0.007
+#F1,12 =1.79, P = 0.016
 #Large Intestine
 LargeIntestine=subset_samples(physeq,Sample.Type=="Large Intestine")
 sample_data(LargeIntestine)
-LargeIntestineOrd=phyloseq::distance(LargeIntestine, "wunifrac")
+LargeIntestineOrd=phyloseq::distance(LargeIntestine, "jaccard")
 adonis(LargeIntestineOrd ~ Anti_Post, as(sample_data(LargeIntestine), "data.frame"))
-#F1,15 = 7.70, P < 0.001
+#F1,15 = 2.49, P < 0.001
 
 
 #Cloaca Not run as Cloaca only has 2 antemortem samples
 Cloaca=subset_samples(physeq,Sample.Type=="Cloaca")
 sample_data(Cloaca)
-CloacaOrd=phyloseq::distance(Cloaca, "wunifrac")
+CloacaOrd=phyloseq::distance(Cloaca, "jaccard")
 
 
 PERMANOVAText<-c("F = 6.06,P = 0.033","F = 2.43, P = 0.007","F = 7.70, P < 0.001"," ")
 PERMANOVAText
 sample_data(physeq)$Sample.Type = factor(sample_data(physeq)$Sample.Type, levels = c("Small Intestine","Ceca", "Large Intestine","Cloaca"))
 
-ord=ordinate(physeq,"PCoA", "wunifrac") #other common methods besides for weighted unifrac include jaccard, bray, jsd
+ord=ordinate(physeq,"PCoA", "jaccard") #other common methods besides for weighted unifrac include jaccard, bray, jsd
 ordplot=plot_ordination(physeq, ord,"samples", color="Anti_Post",shape="Anti_Post")+geom_point(size=2)+scale_colour_manual(values=cbPalette)+scale_fill_manual(values=cbPalette)+
   facet_wrap(~Sample.Type,scales = "free")+ stat_ellipse(type= "norm",geom = "polygon", alpha = 1/4, aes(fill = Anti_Post))+
   theme(legend.position=c(0.73,0.14),legend.title = element_blank(),legend.text = element_text(size = 6),legend.background = element_rect(color="black"))#+  annotate("text", label = PERMANOVAText, size = 2, x = 0, y = c(-0.15))
@@ -1438,3 +1555,54 @@ ggarrange(Figure4A, Figure4B,
 dev.off()
 
 
+
+
+
+#Supplemental FIgures
+
+###########
+#Alpha diversity ante vs post split by sample
+##########
+Diversity=read.csv("StarlingMeta4.18WDiversity.csv",header=TRUE) #File from QIIME OUTPUT
+head(Diversity)
+
+Trtdata <- ddply(Diversity, c("Sample_Type","Anti_Post"), summarise,
+                 N    = length(shannon),
+                 mean = mean(shannon),
+                 sd   = sd(shannon),
+                 se   = sd / sqrt(N))
+Trtdata
+
+ShannonAntePost=ggplot(Trtdata, aes(x=Anti_Post,y=mean))+geom_bar(aes(fill = Sample_Type),colour="black", stat="identity")+xlab("Sample Type")+ylab("Shannon Diversity") + theme(axis.text.x = element_text(angle = 0, hjust = 0.5))+theme(axis.title.x=element_blank())+
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))+geom_errorbar(aes(ymin=mean-se,ymax=mean+se),color="black",width=1) + scale_fill_manual(values=cbPalette)+facet_wrap(~Sample_Type)+guides(fill=FALSE)
+theme_set(theme_bw(base_size = 10)+theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank())) #Sets plot options and font size ( to change font size change base_size=)
+
+dev.off()
+tiff("Figures/FigureSXShannonAntePostByType.tiff", width = 3.3, height = 3.3, units = 'in', res = 300)
+ShannonAntePost
+dev.off()
+
+#Faith's PD
+Trtdata <- ddply(Diversity, c("Sample_Type","Anti_Post"), summarise,
+                 N    = length(faith_pd),
+                 mean = mean(faith_pd),
+                 sd   = sd(faith_pd),
+                 se   = sd / sqrt(N))
+Trtdata
+
+FaithAntePost=ggplot(Trtdata, aes(x=Anti_Post,y=mean))+geom_bar(aes(fill = Sample_Type),colour="black", stat="identity")+xlab("Sample Type")+ylab("Faith's PD") + theme(axis.text.x = element_text(angle = 0, hjust = 0.5))+theme(axis.title.x=element_blank())+
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))+geom_errorbar(aes(ymin=mean-se,ymax=mean+se),color="black",width=1) + scale_fill_manual(values=cbPalette)+facet_wrap(~Sample_Type)+guides(fill=FALSE)
+theme_set(theme_bw(base_size = 10)+theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank())) #Sets plot options and font size ( to change font size change base_size=)
+
+dev.off()
+tiff("Figures/FigureSXFaithAntePostByType.tiff", width = 3.3, height = 3.3, units = 'in', res = 300)
+FaithAntePost
+dev.off()
+
+
+dev.off()
+tiff("Figures/AlphaSupplemental.tiff", width = 6.85, height = 6.85, units = 'in', res = 300)
+ggarrange(ShannonAntePost,FaithAntePost,
+          labels = c("a", "b"),
+          ncol = 2, nrow = 1)
+dev.off()

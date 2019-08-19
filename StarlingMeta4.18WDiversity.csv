@@ -1,0 +1,59 @@
+SampleID,LinkerSequence,Nest,Chick,Sample_Type,Hours,Anti_Post,Type_Hours,Dry Weight,Description,Evenness,faith_pd,shannon
+ST100,N,15,1,Cloacal Swab,72 hrs,Post Mortem,Cloacal Swab72 hrs,NA,ST100,0.821834195,1.255593942,2.843079201
+ST101,N,26,1,Cloacal Swab,72 hrs,Post Mortem,Cloacal Swab72 hrs,NA,ST101,0.763499248,1.377713238,2.90691262
+ST126,N,3,1,Small Intestine Tissue,0 hrs,Ante Mortem,Small Intestine Tissue0 hrs,1.365,ST126,0.899613144,5.845835769,5.224372821
+ST127,N,5,1,Small Intestine Tissue,0 hrs,Ante Mortem,Small Intestine Tissue0 hrs,1.208,ST127,0.935996817,7.093372961,4.981307756
+ST128,N,6,1,Small Intestine Tissue,0 hrs,Ante Mortem,Small Intestine Tissue0 hrs,1.49,ST128,0.813204338,4.403166247,4.412662035
+ST129,N,7,1,Small Intestine Tissue,0 hrs,Ante Mortem,Small Intestine Tissue0 hrs,1.294,ST129,0.843579005,3.395202424,3.211804678
+ST132,N,22,1,Small Intestine Tissue,24 hrs,Post Mortem,Small Intestine Tissue24 hrs,1.463,ST132,0.485074234,2.413235334,1.455222703
+ST133,N,21,1,Small Intestine Tissue,24 hrs,Post Mortem,Small Intestine Tissue24 hrs,1.618,ST133,0.966228031,6.131799777,5.586111815
+ST134,N,20,1,Small Intestine Tissue,24 hrs,Post Mortem,Small Intestine Tissue24 hrs,1.101,ST134,0.771291105,1.204056357,2.76504969
+ST135,N,28,1,Small Intestine Tissue,24 hrs,Post Mortem,Small Intestine Tissue24 hrs,1.244,ST135,0.650483129,3.624183688,2.763205179
+ST136,N,22,2,Small Intestine Tissue,48 hrs,Post Mortem,Small Intestine Tissue48 hrs,1.18,ST136,0.674738749,2.529609293,2.024216246
+ST137,N,21,2,Small Intestine Tissue,48 hrs,Post Mortem,Small Intestine Tissue48 hrs,1.341,ST137,0.628198812,1.136025091,1.763577027
+ST138,N,20,2,Small Intestine Tissue,48 hrs,Post Mortem,Small Intestine Tissue48 hrs,1.148,ST138,0.851948559,1.715132888,3.407794234
+ST139,N,27,1,Small Intestine Tissue,48 hrs,Post Mortem,Small Intestine Tissue48 hrs,1.416,ST139,0.6344422,1.076593864,1.781104433
+ST140,N,22,3,Small Intestine Tissue,72 hrs,Post Mortem,Small Intestine Tissue72 hrs,1.096,ST140,0.855470555,1.1236949,3.16561722
+ST141,N,21,3,Small Intestine Tissue,72 hrs,Post Mortem,Small Intestine Tissue72 hrs,1.065,ST141,0.759416965,1.341650882,2.407294823
+ST142,N,15,1,Small Intestine Tissue,72 hrs,Post Mortem,Small Intestine Tissue72 hrs,1.417,ST142,0.860105817,2.557716273,3.274728117
+ST162,N,3,1,Large Intestine Tissue,0 hrs,Ante Mortem,Large Intestine Tissue0 hrs,0.144,ST162,0.852734226,2.945016666,3.057020224
+ST163,N,5,1,Large Intestine Tissue,0 hrs,Ante Mortem,Large Intestine Tissue0 hrs,0.257,ST163,0.869390658,3.341110229,3.310078803
+ST164,N,6,1,Large Intestine Tissue,0 hrs,Ante Mortem,Large Intestine Tissue0 hrs,0.207,ST164,0.733196209,5.907970971,3.220430485
+ST165,N,7,1,Large Intestine Tissue,0 hrs,Ante Mortem,Large Intestine Tissue0 hrs,0.235,ST165,0.464500094,4.02381116,1.665215419
+ST167,N,11,1,Large Intestine Tissue,0 hrs,Ante Mortem,Large Intestine Tissue0 hrs,0.248,ST167,0.860211247,3.382906042,2.58063374
+ST168,N,22,1,Large Intestine Tissue,24 hrs,Post Mortem,Large Intestine Tissue24 hrs,0.168,ST168,0.654548417,1.539493522,1.963645252
+ST169,N,21,1,Large Intestine Tissue,24 hrs,Post Mortem,Large Intestine Tissue24 hrs,0.174,ST169,0.641508933,2.419341947,2.131046547
+ST170,N,20,1,Large Intestine Tissue,24 hrs,Post Mortem,Large Intestine Tissue24 hrs,0.08,ST170,0.728976296,3.660037018,2.848030633
+ST171,N,28,1,Large Intestine Tissue,24 hrs,Post Mortem,Large Intestine Tissue24 hrs,0.125,ST171,0.621433575,3.238521153,2.064357652
+ST172,N,22,2,Large Intestine Tissue,48 hrs,Post Mortem,Large Intestine Tissue48 hrs,0.147,ST172,0.657618693,2.856174156,2.184562013
+ST173,N,21,2,Large Intestine Tissue,48 hrs,Post Mortem,Large Intestine Tissue48 hrs,0.224,ST173,0.760525036,2.72436976,2.526409485
+ST174,N,20,2,Large Intestine Tissue,48 hrs,Post Mortem,Large Intestine Tissue48 hrs,0.09,ST174,0.778891037,1.205952093,2.694520281
+ST175,N,27,1,Large Intestine Tissue,48 hrs,Post Mortem,Large Intestine Tissue48 hrs,0.279,ST175,0.680940707,1.831405243,2.262036066
+ST176,N,22,3,Large Intestine Tissue,72 hrs,Post Mortem,Large Intestine Tissue72 hrs,0.148,ST176,0.772901129,2.482711727,2.860074036
+ST177,N,21,3,Large Intestine Tissue,72 hrs,Post Mortem,Large Intestine Tissue72 hrs,0.103,ST177,0.880570848,1.320653638,3.046274632
+ST178,N,15,1,Large Intestine Tissue,72 hrs,Post Mortem,Large Intestine Tissue72 hrs,0.192,ST178,0.767912572,1.294243509,2.656541031
+ST179,N,26,1,Large Intestine Tissue,72 hrs,Post Mortem,Large Intestine Tissue72 hrs,0.184,ST179,0.771967839,1.158370821,2.67056995
+ST180,N,3,1,Ceca,0 hrs,Ante Mortem,Ceca0 hrs,0.028,ST180,0.834919911,2.969062445,3.608463822
+ST181,N,5,1,Ceca,0 hrs,Ante Mortem,Ceca0 hrs,0.023,ST181,0.726125997,2.68796761,2.41213835
+ST182,N,6,1,Ceca,0 hrs,Ante Mortem,Ceca0 hrs,0.027,ST182,0.560694011,6.621140716,2.074814386
+ST183,N,7,1,Ceca,0 hrs,Ante Mortem,Ceca0 hrs,0.024,ST183,0.791536969,7.99166235,3.300649797
+ST185,N,11,1,Ceca,0 hrs,Ante Mortem,Ceca0 hrs,0.018,ST185,0.854854658,4.521855916,3.81216589
+ST187,N,21,1,Ceca,24 hrs,Post Mortem,Ceca24 hrs,0.022,ST187,0.503191959,2.458215281,1.412638424
+ST188,N,20,1,Ceca,24 hrs,Post Mortem,Ceca24 hrs,0.017,ST188,0.632649367,4.240565383,2.471691863
+ST189,N,28,1,Ceca,24 hrs,Post Mortem,Ceca24 hrs,0.012,ST189,0.669580935,4.460935829,2.008742804
+ST190,N,22,2,Ceca,48 hrs,Post Mortem,Ceca48 hrs,0.012,ST190,0.368428497,5.698160463,1.034309555
+ST191,N,21,2,Ceca,48 hrs,Post Mortem,Ceca48 hrs,0.021,ST191,0.617409529,2.50302077,1.73328768
+ST192,N,20,2,Ceca,48 hrs,Post Mortem,Ceca48 hrs,0.022,ST192,0.660638698,3.82659214,2.194594252
+ST193,N,27,1,Ceca,48 hrs,Post Mortem,Ceca48 hrs,0.015,ST193,0.785266884,4.448322083,2.905832766
+ST195,N,21,3,Ceca,72 hrs,Post Mortem,Ceca72 hrs,0.014,ST195,0.275828282,2.555617476,0.640453436
+ST196,N,15,1,Ceca,72 hrs,Post Mortem,Ceca72 hrs,0.011,ST196,0.642075957,2.557306666,2.301818229
+ST197,N,26,1,Ceca,72 hrs,Post Mortem,Ceca72 hrs,0.011,ST197,0.464090484,2.471763675,1.302866704
+ST81,N,28,1,Cloacal Swab,0 hrs,Ante Mortem,Cloacal Swab0 hrs,NA,ST81,0.852798719,6.600951086,3.960274608
+ST82,N,22,1,Cloacal Swab,24 hrs,Post Mortem,Cloacal Swab24 hrs,NA,ST82,0.706591474,1.312676525,2.23984198
+ST83,N,21,1,Cloacal Swab,24 hrs,Post Mortem,Cloacal Swab24 hrs,NA,ST83,0.748546203,1.352965143,2.245638609
+ST84,N,20,1,Cloacal Swab,24 hrs,Post Mortem,Cloacal Swab24 hrs,NA,ST84,0.714033479,1.184463925,2.142100436
+ST85,N,28,1,Cloacal Swab,24 hrs,Post Mortem,Cloacal Swab24 hrs,NA,ST85,0.645945629,1.224729539,2.047599199
+ST88,N,20,2,Cloacal Swab,0 hrs,Ante Mortem,Cloacal Swab0 hrs,NA,ST88,0.949626916,6.711020422,5.780818565
+ST90,N,22,2,Cloacal Swab,48 hrs,Post Mortem,Cloacal Swab48 hrs,NA,ST90,0.67306821,1.08783943,1.562815988
+ST91,N,21,2,Cloacal Swab,48 hrs,Post Mortem,Cloacal Swab48 hrs,NA,ST91,0.813172031,1.139147671,2.439516093
+ST99,N,21,3,Cloacal Swab,72 hrs,Post Mortem,Cloacal Swab72 hrs,NA,ST99,0.809128314,1.139781001,3.080638669

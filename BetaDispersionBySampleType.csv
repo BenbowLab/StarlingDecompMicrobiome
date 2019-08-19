@@ -1,6 +1,5 @@
-"Table SX. Beta dispersion between sample types antemortem vs postmortem. Differences between groups were tested using PERMANOVA tests (Jaccard distance, 999 permutations)",,,,,,,,,
-Sample Type,"DF (Group,Residuals)",F,P,Avg dist Antemortem,Avg dist Postmortem,Difference,95% CI +/-,,
-All,"1,54",6.4,0.014,0.663,0.618,-0.045,0.036,,
-Large Intestine,"1,15",0.1385,0.701,0.598,0.584,-0.014,0.080,,
-Small Intestine,"1,12",0.0117,0.924,0.577,0.582,0.005,0.103,,
-Ceca,"1,12",0.2422,0.651,0.600,0.576,-0.024,0.105,,
+Table SX. Antemortem vs Postmortem Beta Diversity Split By Sample Type.,,,,
+Sample Type,"DF (group, residuals)",F,R2,P
+Small Intestine,"1,12",1.87,0.135,0.011
+Large Intestine,"1,15",2.49,0.143,0.001
+Ceca,"1,12",1.79,0.13,0.022
