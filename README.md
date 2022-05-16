@@ -22,6 +22,8 @@ Group names StarlingPiCrustGroupsL2.csv
 
 metadata  StarlingMeta1.16.18.csv
 
+metadata from 2022 StarlingMeta5.13.22.csv
+
 # Output files
 Figures are given in the Figures/ folder
 
