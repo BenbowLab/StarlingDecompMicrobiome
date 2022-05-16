@@ -1,5 +1,7 @@
 # StarlingDecompMicrobiome
 # Code files
+Starling2022.r contains code use in creating figures for technical report
+
 Starling2019.r contains code used for inline statistics and figures
 
 Starling7.31.19.rmd (and Starling7.31.19.html) contains precomputed code used for an overview of the data
